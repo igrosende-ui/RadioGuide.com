@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioGuide.com - Proyecciones de Tórax y Abdomen</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  
+<header class="main-header">
+    <div class="header-container">
+        <h1 class="logo">RadioGuide<span>.com</span></h1>
+        <p class="subtitle">Orientación digital para estudiantes de Imagenología</p>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="posicionamiento.html" class="active">Posicionamiento del paciente</a></li>
+            <li><a href="bioseguridad.html">Bioseguridad y Radioprotección</a></li>
+            <li><a href="primeros-auxilios.html">Primeros Auxilios</a></li>
+            <li><a href="tips.html">Tips Clínicos</a></li>
+            <li><a href="nota-autor.html">Nota de Autor</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="content-container">
+        <!-- Navegación Volver -->
+        <div class="navigation-bar">
+            <a href="posicionamiento.html" class="btn-back" id="btn-volver-main">&larr; Volver a Posicionamiento</a>
+            <button type="button" class="btn-back hidden" id="btn-volver-catalogo">&larr; Volver a Proyecciones de Tórax y Abdomen</button>
+        </div>
+
+        <section class="section-title">
+            <h2 id="titulo-seccion">Proyecciones de Tórax y Abdomen</h2>
+            <p id="subtitulo-seccion">Selecciona una proyección para acceder a las pautas de posicionamiento, protocolos y preparación clínica.</p>
+        </section>
+
+        <!-- VISTA 1: CATÁLOGO DE OPCIONES APILADAS (ESTILO CRÁNEO) -->
+        <div id="vista-catalogo" class="lista-proyecciones-container">
+            
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('torax-pa')">
+                <div class="craneo-img-box">
+                    <img src="../img/torax-pa-rx.jpg" alt="Tórax PA">
+                </div>
+                <div class="craneo-info">
+                    <h3>Tórax PA</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('torax-lat')">
+                <div class="craneo-img-box">
+                    <img src="../img/torax-lat-rx.jpg" alt="Tórax Lateral">
+                </div>
+                <div class="craneo-info">
+                    <h3>Tórax Lateral</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('torax-dl')">
+                <div class="craneo-img-box">
+                    <img src="../img/torax-dl-rx.jpg" alt="Tórax AP Decúbito Lateral">
+                </div>
+                <div class="craneo-info">
+                    <h3>Tórax AP Decúbito Lateral</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('torax-lordotica')">
+                <div class="craneo-img-box">
+                    <img src="../img/torax-lordotica-rx.jpg" alt="Tórax AP Hiperlordótica">
+                </div>
+                <div class="craneo-info">
+                    <h3>Tórax AP Hiperlordótica</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('parrilla-costal')">
+                <div class="craneo-img-box">
+                    <img src="../img/parrilla-costal-rx.jpg" alt="Parrilla Costal">
+                </div>
+                <div class="craneo-info">
+                    <h3>Parrilla Costal (Alta / Baja / Oblicua)</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('abdomen-ap')">
+                <div class="craneo-img-box">
+                    <img src="../img/abdomen-ap-rx.jpg" alt="Abdomen AP">
+                </div>
+                <div class="craneo-info">
+                    <h3>Abdomen AP (Decúbito Supino / Bipedestación)</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('abdomen-dl')">
+                <div class="craneo-img-box">
+                    <img src="../img/abdomen-dl-rx.jpg" alt="Abdomen DL Izquierdo">
+                </div>
+                <div class="craneo-info">
+                    <h3>Abdomen AP en Decúbito Lateral Izquierdo</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('renal-simple')">
+                <div class="craneo-img-box">
+                    <img src="../img/renal-simple-rx.jpg" alt="Renal Simple AP">
+                </div>
+                <div class="craneo-info">
+                    <h3>Renal Simple AP</h3>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="card-proyeccion-craneo" onclick="mostrarFicha('vesical-simple')">
+                <div class="craneo-img-box">
+                    <img src="../img/vesical-simple-rx.jpg" alt="Vesical Simple AP">
+                </div>
+                <div class="craneo-info">
+                    <h3>Vesical Simple AP</h3>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- VISTA 2: FICHAS TÉCNICAS DESPLEGABLES -->
+        <div id="vista-detalle" class="hidden">
+            
+            <!-- FICHA TÓRAX PA -->
+            <article id="ficha-torax-pa" class="bloque-ficha-unificada ficha-item hidden">
+                <div class="ficha-galeria">
+                    <div class="img-box">
+                        <img src="../img/torax-pa-posicion.jpg" alt="Posicionamiento Tórax PA">
+                        <span class="img-tag">Posicionamiento Paciente</span>
+                    </div>
+                    <div class="img-box">
+                        <img src="../img/torax-pa-rx.jpg" alt="Imagen Radiológica Tórax PA">
+                        <span class="img-tag">Imagen Radiológica (Rx)</span>
+                    </div>
+                </div>
+                <h3 class="proyeccion-titulo">Tórax Posteroanterior (PA)</h3>
+                <div class="ficha-detalle">
+                    <p><strong>Objetos a quitar:</strong> Cadenas, collares, piercings torácicos, ropa con broches/cierres/estampados metálicos, sostén con barba.</p>
+                    <p><strong>Ropa a quitar:</strong> Desnudar tórax (usar bata de examen abierta hacia atrás).</p>
+                    <p><strong>Chasis:</strong> 35 x 43 cm (longitudinal) ó 35 x 35 cm.</p>
+                    <p><strong>Distancia Foco Película (DFP):</strong> 180 cm (1.80 metros para evitar magnificación cardíaca).</p>
+                    <p><strong>Bucky:</strong> Sí (Estativo mural).</p>
+                    <p><strong>Angulación:</strong> 0° (Perpendicular).</p>
+                    <p><strong>Posición del Paciente:</strong> Bipedestación, pies levemente separados. Dorso de manos en caderas, codos y hombros rotados hacia adelante para desproyectar escápulas. PSM alineado con el estativo.</p>
+                    <p><strong>Centraje / Rayo Central (RC):</strong> Perpendicular (0°), centraje transversal a nivel del vértice inferior de la escápula (aprox. T7 / LMC).</p>
+                    <p><strong>Respiración:</strong> Apnea en 2da inspiración profunda máxima.</p>
+                    <p><strong>Factores de Exposición (kV / mAs):</strong> 110 - 125 kV | 2 - 4 mAs (Técnica de alto kV).</p>
+                    <p><strong>Radioprotección y Colimación:</strong> Colimación estricta a 4 bordes. Protección gonadal descontinuada.</p>
+                </div>
+            </article>
+
+            <!-- FICHA TÓRAX LATERAL -->
+            <article id="ficha-torax-lat" class="bloque-ficha-unificada ficha-item hidden">
+                <div class="ficha-galeria">
+                    <div class="img-box">
+                        <img src="../img/torax-lat-posicion.jpg" alt="Posicionamiento Tórax Lateral">
+                        <span class="img-tag">Posicionamiento Paciente</span>
+                    </div>
+                    <div class="img-box">
+                        <img src="../img/torax-lat-rx.jpg" alt="Imagen Radiológica Tórax Lateral">
+                        <span class="img-tag">Imagen Radiológica (Rx)</span>
+                    </div>
+                </div>
+                <h3 class="proyeccion-titulo">Tórax Lateral (Izquierdo / Derecho)</h3>
+                <div class="ficha-detalle">
+                    <p><strong>Objetos a quitar:</strong> Elementos metálicos en tórax, collares, sostén.</p>
+                    <p><strong>Ropa a quitar:</strong> Desnudar tórax (bata de examen).</p>
+                    <p><strong>Chasis:</strong> 35 x 43 cm (longitudinal) ó 35 x 35 cm.</p>
+                    <p><strong>Distancia Foco Película (DFP):</strong> 180 cm (1.80 metros).</p>
+                    <p><strong>Bucky:</strong> Sí (Estativo mural).</p>
+                    <p><strong>Angulación:</strong> 0° (Perpendicular).</p>
+                    <p><strong>Posición del Paciente:</strong> Bipedestación. Lado izquierdo apoyado contra estativo. Brazos elevados sobre la cabeza con codos hacia adelante. Plano Coronal Medio centrado sin rotación.</p>
+                    <p><strong>Centraje / Rayo Central (RC):</strong> Perpendicular al centro del receptor, a nivel del vértice inferior de la escápula (T7).</p>
+                    <p><strong>Respiración:</strong> Apnea inspiratoria profunda.</p>
+                    <p><strong>Factores de Exposición (kV / mAs):</strong> 115 - 125 kV | 7 - 12 mAs.</p>
+                </div>
+            </article>
+
+            <!-- FICHA ABDOMEN AP -->
+            <article id="ficha-abdomen-ap" class="bloque-ficha-unificada ficha-item hidden">
+                <div class="ficha-galeria">
+                    <div class="img-box">
+                        <img src="../img/abdomen-ap-posicion.jpg" alt="Posicionamiento Abdomen AP">
+                        <span class="img-tag">Posicionamiento Paciente</span>
+                    </div>
+                    <div class="img-box">
+                        <img src="../img/abdomen-ap-rx.jpg" alt="Imagen Radiológica Abdomen AP">
+                        <span class="img-tag">Imagen Radiológica (Rx)</span>
+                    </div>
+                </div>
+                <h3 class="proyeccion-titulo">Abdomen AP (Decúbito Supino / Bipedestación)</h3>
+                <div class="ficha-detalle">
+                    <p><strong>Objetos a quitar:</strong> Cinturones, botones metálicos, cierres, piercings ombligo/pélvicos, joyas abdominales.</p>
+                    <p><strong>Ropa a quitar:</strong> Bata de examen.</p>
+                    <p><strong>Chasis:</strong> 35 x 43 cm (longitudinal). Folio Regular.</p>
+                    <p><strong>Distancia Foco Película (DFP):</strong> 100 cm (1 metro con Bucky).</p>
+                    <p><strong>Angulación:</strong> 0° (Perpendicular).</p>
+                    <p><strong>Posición del Paciente:</strong> Decúbito supino o bipedestación (mínimo 5 min de pie previo al disparo). Brazos a los lados, piernas levemente separadas, PSM al centro.</p>
+                    <p><strong>Centraje / Rayo Central (RC):</strong> Perpendicular (0°). Centrado por el frente en PSM; lateralmente en punto medio entre 2 traveses de dedo sobre apéndice xifoides y sínfisis púbica (crestas ilíacas / L4-L5).</p>
+                    <p><strong>Respiración:</strong> Apnea Espiratoria.</p>
+                    <p><strong>Radioprotección y Colimación:</strong> Sin protección gonadal. Colimación estricta a paredes abdominales laterales.</p>
+                </div>
+            </article>
+
+            <!-- FICHA RENAL SIMPLE -->
+            <article id="ficha-renal-simple" class="bloque-ficha-unificada ficha-item hidden">
+                <div class="ficha-galeria">
+                    <div class="img-box">
+                        <img src="../img/renal-simple-posicion.jpg" alt="Posicionamiento Renal Simple">
+                        <span class="img-tag">Posicionamiento Paciente</span>
+                    </div>
+                    <div class="img-box">
+                        <img src="../img/renal-simple-rx.jpg" alt="Imagen Radiológica Renal Simple">
+                        <span class="img-tag">Imagen Radiológica (Rx)</span>
+                    </div>
+                </div>
+                <h3 class="proyeccion-titulo">Renal Simple AP</h3>
+                <div class="ficha-detalle">
+                    <p><strong>Objetos a quitar:</strong> Objetos metálicos, botones, cierres.</p>
+                    <p><strong>Ropa a quitar:</strong> Bata de examen.</p>
+                    <p><strong>Chasis:</strong> 35 x 43 cm (longitudinal). Folio Regular.</p>
+                    <p><strong>Distancia Foco Película (DFP):</strong> 100 cm (1 metro con Bucky).</p>
+                    <p><strong>Angulación:</strong> 0° (Perpendicular).</p>
+                    <p><strong>Posición del Paciente:</strong> Decúbito dorsal (supino), brazos al lado del cuerpo. Preparación previa requerida (ayuno/catárticos).</p>
+                    <p><strong>Centraje / Rayo Central (RC):</strong> Perpendicular (0°). Centrado por el frente en PSM; lateralmente en punto medio entre 5 traveses de dedo sobre apéndice xifoides y sínfisis púbica.</p>
+                    <p><strong>Respiración:</strong> Apnea Espiratoria.</p>
+                </div>
+            </article>
+
+            <!-- FICHA VESICAL SIMPLE -->
+            <article id="ficha-vesical-simple" class="bloque-ficha-unificada ficha-item hidden">
+                <div class="ficha-galeria">
+                    <div class="img-box">
+                        <img src="../img/vesical-simple-posicion.jpg" alt="Posicionamiento Vesical Simple">
+                        <span class="img-tag">Posicionamiento Paciente</span>
+                    </div>
+                    <div class="img-box">
+                        <img src="../img/vesical-simple-rx.jpg" alt="Imagen Radiológica Vesical Simple">
+                        <span class="img-tag">Imagen Radiológica (Rx)</span>
+                    </div>
+                </div>
+                <h3 class="proyeccion-titulo">Vesical Simple AP</h3>
+                <div class="ficha-detalle">
+                    <p><strong>Objetos a quitar:</strong> Botones, cierres, joyas pélvicas.</p>
+                    <p><strong>Ropa a quitar:</strong> Bata de examen.</p>
+                    <p><strong>Chasis:</strong> 18 x 24 cm ó 24 x 30 cm (longitudinal). Folio Regular.</p>
+                    <p><strong>Distancia Foco Película (DFP):</strong> 100 cm (1 metro con Bucky).</p>
+                    <p><strong>Angulación:</strong> 0° ó 5° a caudal.</p>
+                    <p><strong>Posición del Paciente:</strong> Decúbito dorsal (supino), brazos al lado del cuerpo.</p>
+                    <p><strong>Centraje / Rayo Central (RC):</strong> Perpendicular (0°) ó 5° caudal. Centrado en PSM, 2 traveses de dedo por sobre sínfisis púbica.</p>
+                    <p><strong>Respiración:</strong> Apnea Espiratoria.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>Portafolio de Título - Duoc UC San Joaquín - Escuela de Salud</p>
+        <p>&copy; 2026 RadioGuide.com - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS ESTÁNDAR LIMPIO (SIN TEMPLATE LITERALS QUE ERROREN EL LINTER) -->
+    <script>
+        function mostrarFicha(idFicha) {
+            document.getElementById('vista-catalogo').classList.add('hidden');
+            document.getElementById('vista-detalle').classList.remove('hidden');
+            
+            document.getElementById('btn-volver-main').classList.add('hidden');
+            document.getElementById('btn-volver-catalogo').classList.remove('hidden');
+
+            var fichas = document.querySelectorAll('.ficha-item');
+            fichas.forEach(function(ficha) {
+                ficha.classList.add('hidden');
+            });
+
+            var fichaSeleccionada = document.getElementById('ficha-' + idFicha);
+            if (fichaSeleccionada) {
+                fichaSeleccionada.classList.remove('hidden');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.getElementById('btn-volver-catalogo').addEventListener('click', function() {
+            document.getElementById('vista-detalle').classList.add('hidden');
+            document.getElementById('vista-catalogo').classList.remove('hidden');
+
+            document.getElementById('btn-volver-catalogo').classList.add('hidden');
+            document.getElementById('btn-volver-main').classList.remove('hidden');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

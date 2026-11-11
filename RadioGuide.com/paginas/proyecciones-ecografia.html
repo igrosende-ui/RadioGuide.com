@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Ecografía (Ultrasonido)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Orientación digital para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Estudios de Ultrasonido -->
+    <div id="eco-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Estudios de Ecografía (Ultrasonido)</h2>
+
+      <!-- Bloque 1: Ecotomografía Abdominal -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-eco-abdomen')">
+        <div class="card-imagen">
+          <img src="../img/eco_abdomen.jpg" alt="Ecotomografía Abdominal">
+        </div>
+        <div class="card-contenido">
+          <h2>Ecotomografía Abdominal</h2>
+          <p>Evaluación de hígado, vesícula, vías biliares, páncreas y bazo. Transductor Convexo (3.5 MHz). Ayuno estricto de 6 horas.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Ecotomografía Pelviana -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-eco-pelvis')">
+        <div class="card-imagen">
+          <img src="../img/eco_pelvis.jpg" alt="Ecotomografía Pelviana">
+        </div>
+        <div class="card-contenido">
+          <h2>Ecotomografía Pelviana (Ginecológica / Prostática)</h2>
+          <p>Estudio de útero, ovarios, vejiga y próstata. Transductor Convexo o Endocavitario. Requisito fundamental: vejiga llena (1.5L de agua).</p>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Ecotomografía de Partes Blandas -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-eco-tiroides')">
+        <div class="card-imagen">
+          <img src="../img/eco_tiroides.jpg" alt="Ecotomografía de Tiroides y Superficiales">
+        </div>
+        <div class="card-contenido">
+          <h2>Ecotomografía de Partes Blandas y Pequeñas Partes</h2>
+          <p>Evaluación de tiroides, testículos, glándulas salivales y masas subcutáneas. Transductor Lineal de Alta Frecuencia (7.5 - 12 MHz). Sin ayuno.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Ecotomografía Músculo-Esquelética -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-eco-msk')">
+        <div class="card-imagen">
+          <img src="../img/eco_msk.jpg" alt="Ecotomografía Músculo-Esquelética">
+        </div>
+        <div class="card-contenido">
+          <h2>Ecotomografía Músculo-Esquelética (MSK)</h2>
+          <p>Estudio de tendones, ligamentos, músculos y articulaciones (hombro, rodilla, tobillo). Transductor Lineal de alta resolución. Evaluación dinámica.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 5: Ecotomografía Vascular Doppler -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-eco-doppler')">
+        <div class="card-imagen">
+          <img src="../img/eco_doppler.jpg" alt="Ecotomografía Vascular Doppler">
+        </div>
+        <div class="card-contenido">
+          <h2>Ecotomografía Vascular Periférica y Abdominal (Doppler)</h2>
+          <p>Análisis de flujo sanguíneo arterial y venoso (TVP, estenosis, aneurismas). Evaluación con Doppler Color, Poder y Espectral.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Ecotomografía Obstétrica -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-eco-obstetrica')">
+        <div class="card-imagen">
+          <img src="../img/eco_obstetrica.jpg" alt="Ecotomografía Obstétrica">
+        </div>
+        <div class="card-contenido">
+          <h2>Ecotomografía Obstétrica</h2>
+          <p>Seguimiento del desarrollo embrionario y fetal, placenta y líquido amniótico. Transductor Convexo / Endovaginal según edad gestacional.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Eco Abdominal -->
+    <div id="detalle-eco-abdomen" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Estudios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_eco_abdomen.jpg" alt="Posición Paciente Eco Abdominal">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_eco_abdomen.jpg" alt="Imagen Ecotomográfica Abdominal">
+            <span class="img-tag">Imagen Ultrasonido (US)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ecotomografía Abdominal</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Transductor / Frecuencia:</strong><p>Convexo (Sectorial Curvo) de Baja Frecuencia: 2.0 a 5.0 MHz (estándar 3.5 MHz) para alcanzar profundidad orgánica.</p></div>
+          <div class="info-item"><strong>Preparación previa:</strong><p>Ayuno estricto de alimentos sólidos y líquidos por 6 horas previas (evita la contracción vesicular y disminuye el gas intestinal).</p></div>
+          <div class="info-item"><strong>Insumos requeridos:</strong><p>Ultra eco-gel conductor a base de agua, calentador de gel (37°C) y toallas de papel absorbente.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino por defecto. Posibles cambios posturales a Decúbito Lateral Izquierdo/Derecho para despejar estructuras.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Técnica:</strong><p>- Solicitar apneas inspiratorias profundas para descender el hígado y la vesícula biliar por debajo del reborde costal.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Eco Pelviana -->
+    <div id="detalle-eco-pelvis" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Estudios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_eco_pelvis.jpg" alt="Posición Paciente Eco Pelviana">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_eco_pelvis.jpg" alt="Imagen Ecotomográfica Pelviana">
+            <span class="img-tag">Imagen Ultrasonido (US)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ecotomografía Pelviana (Ginecológica / Prostática)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Transductor / Frecuencia:</strong><p>Convexo 3.5 MHz para vía suprapúbica / Transductor Endocavitario (Endovaginal/Endorrectal) de 6.0 a 9.0 MHz.</p></div>
+          <div class="info-item"><strong>Preparación previa:</strong><p>Vía Suprapúbica: Ingerir 1 a 1.5 litros de agua 1 a 2 horas antes y **retener orina** (la vejiga actúa como ventana acústica desplazando el gas intestinal).</p></div>
+          <div class="info-item"><strong>Insumos requeridos:</strong><p>Eco-gel, cobertor o preservativo estéril para sonda endocavitaria y gel estéril.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino (vía suprapúbica) / Posición ginecológica o litotomía (vía endocavitaria).</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Técnica:</strong><p>- Evaluar ecogenicidad endometrial/miometrial, folículos ováricos y parénquima prostático.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Eco Tiroides / Superficial -->
+    <div id="detalle-eco-tiroides" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Estudios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_eco_tiroides.jpg" alt="Posición Paciente Eco Tiroides">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_eco_tiroides.jpg" alt="Imagen Ecotomográfica Tiroides">
+            <span class="img-tag">Imagen Ultrasonido (US)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ecotomografía de Partes Blandas (Tiroides / Pequeñas Partes)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Transductor / Frecuencia:</strong><p>Lineal de Alta Frecuencia: 7.5 a 12.0 MHz (proporciona alta resolución espacial en planos superficiales).</p></div>
+          <div class="info-item"><strong>Preparación previa:</strong><p>No requiere preparación previa ni ayuno de líquidos/sólidos.</p></div>
+          <div class="info-item"><strong>Insumos requeridos:</strong><p>Ultra eco-gel conductor y almohada/cojín cilíndrico para hiperextensión cervical.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino con el cuello en hiperextensión (almohadilla bajo los hombros).</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Técnica:</strong><p>- Indicar al paciente no tragar ni hablar durante la exploración del istmo y lóbulos tiroideos.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Eco MSK -->
+    <div id="detalle-eco-msk" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Estudios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_eco_msk.jpg" alt="Posición Paciente Eco MSK">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_eco_msk.jpg" alt="Imagen Ecotomográfica Músculo-Esquelética">
+            <span class="img-tag">Imagen Ultrasonido (US)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ecotomografía Músculo-Esquelética (MSK)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Transductor / Frecuencia:</strong><p>Lineal de Alta Frecuencia (8.0 a 15.0 MHz) para detalle anatómico de fibras tendinosas y ligamentos.</p></div>
+          <div class="info-item"><strong>Preparación previa:</strong><p>Sin preparación previa.</p></div>
+          <div class="info-item"><strong>Insumos requeridos:</strong><p>Gel conductor abundante para evitar artefactos por anisotropía y presión excesiva.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Variable según articulación a examinar (sentado para hombro/codo; supino/prono para rodilla/tobillo).</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Técnica:</strong><p>- Permite maniobras dinámicas en tiempo real (flexión/extensión) para evaluar atrapamientos o desgarros.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha Eco Doppler -->
+    <div id="detalle-eco-doppler" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Estudios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_eco_doppler.jpg" alt="Posición Paciente Eco Doppler">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_eco_doppler.jpg" alt="Imagen Ecotomográfica Doppler Vascular">
+            <span class="img-tag">Imagen Ultrasonido (US)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ecotomografía Vascular Doppler (Periférico / Abdominal)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Transductor / Frecuencia:</strong><p>Lineal 7.5 MHz para vasos periféricos (carótidas, extremidades) / Convexo 3.5 MHz para Aorta y Vasos Renales.</p></div>
+          <div class="info-item"><strong>Preparación previa:</strong><p>Vascular Abdominal: Ayuno de 6 a 8 horas. Vascular Periférico (Carótidas/Extremidades): Sin preparación.</p></div>
+          <div class="info-item"><strong>Insumos requeridos:</strong><p>Ultra eco-gel conductor.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino. En extremidades inferiores se puede complementar en bipedestación para reflujo venoso.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Técnica:</strong><p>- Ajuste del ángulo Doppler (&le; 60°) respecto al eje del vaso sanguíneo.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Eco Obstétrica -->
+    <div id="detalle-eco-obstetrica" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Estudios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_eco_obstetrica.jpg" alt="Posición Paciente Eco Obstétrica">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_eco_obstetrica.jpg" alt="Imagen Ecotomográfica Obstétrica">
+            <span class="img-tag">Imagen Ultrasonido (US)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ecotomografía Obstétrica</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Transductor / Frecuencia:</strong><p>Convexo 3.5 MHz (vía abdominal) / Transductor Endovaginal 6.0-9.0 MHz (precoz &lt; 12 semanas).</p></div>
+          <div class="info-item"><strong>Preparación previa:</strong><p>Primer trimestre (vía suprapúbica): Vejiga llena (1.5L agua). Segundo y tercer trimestre: No requiere vejiga llena.</p></div>
+          <div class="info-item"><strong>Insumos requeridos:</strong><p>Eco-gel conductor a temperatura agradable (37°C).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino semisentada con cabecera ligeramente elevada.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Técnica:</strong><p>- Estimación de biometría fetal (DBP, LF, CC, CA), viabilidad y localización placentaria.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Portafolio de Título - Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('eco-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('eco-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

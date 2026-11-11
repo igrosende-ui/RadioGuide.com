@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Tomografía Computada (TAC)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Orientación digital para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Protocolos de TAC -->
+    <div id="tac-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Protocolos de Tomografía Computada (TC)</h2>
+
+      <!-- Bloque 1: TC de Cerebro y Cabeza -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tac-cerebro')">
+        <div class="card-imagen">
+          <img src="../img/tac_cerebro.jpg" alt="TC Cerebro y Cabeza">
+        </div>
+        <div class="card-contenido">
+          <h2>TC de Cerebro y Cabeza (Órbitas, Silla Turca, APC)</h2>
+          <p>Estudio de encéfalo, órbitas y fosa posterior. Inclinación de mentón para perpendicularidad de LOM y evitar artefactos dentarios. Ayuno de 6 hrs para contraste e.v.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 2: TC Columna Cervical -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tac-cervical')">
+        <div class="card-imagen">
+          <img src="../img/tac_cervical.jpg" alt="TC Columna Cervical">
+        </div>
+        <div class="card-contenido">
+          <h2>TC de Columna Cervical</h2>
+          <p>Adquisición volumétrica desde C0 a T1. Posición supina, vía venosa 20G en caso de estudio contrastado (tumores o posoperado &lt; 1 año).</p>
+        </div>
+      </div>
+
+      <!-- Bloque 3: TC Abdomen y Pelvis Rutina -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tac-abdomen')">
+        <div class="card-imagen">
+          <img src="../img/tac_abdomen.jpg" alt="TC Abdomen y Pelvis">
+        </div>
+        <div class="card-contenido">
+          <h2>TC de Abdomen y Pelvis (Rutina / Trifásico)</h2>
+          <p>Exploración desde cúpulas diafragmáticas a piso pelviano. Protocolo de hidratación oral (1.5L de agua previa). Fases: Basal, Arterial, Venosa y Tardía.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Pielotac -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tac-pielotac')">
+        <div class="card-imagen">
+          <img src="../img/tac_pielotac.jpg" alt="Pielotac">
+        </div>
+        <div class="card-contenido">
+          <h2>Pielotac (Protocolo para Litiasis Renal)</h2>
+          <p>Estudio específico sin contraste e.v. Posición en DECÚBITO PRONO con la cabeza hacia el Gantry. 1L de agua 1 hora antes y retención urinaria (vejiga llena).</p>
+        </div>
+      </div>
+
+      <!-- Bloque 5: TC de Extremidades (Rodilla) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tac-rodilla')">
+        <div class="card-imagen">
+          <img src="../img/tac_rodilla.jpg" alt="TC Rodillas">
+        </div>
+        <div class="card-contenido">
+          <h2>TC de Extremidades (Rodillas / Músculo-esquelético)</h2>
+          <p>Evaluación de fracturas complejas, luxaciones y compromiso articular. Extremidades extendidas en decúbito supino con centrado sobre estructura de interés.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha TC Cerebro -->
+    <div id="detalle-tac-cerebro" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Protocolos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tac_cerebro.jpg" alt="Posicionamiento Paciente TC Cerebro">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/corte_tac_cerebro.jpg" alt="Corte Axial TC Cerebro">
+            <span class="img-tag">Corte Tomográfico (TC)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>TC de Cerebro y Cabeza</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Preparación / Ayuno:</strong><p>6 horas de ayuno (sin líquidos) si se requiere medio de contraste e.v. Retirar piercing, aros, prótesis dentales y elementos metálicos.</p></div>
+          <div class="info-item"><strong>Vía Venosa / Contraste:</strong><p>Teflón 18G ó 20G. Contraste yodado no iónico (50 - 100 cc) inyectado por bomba o manualmente según indicación.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino (Head First). Mentón flectado hacia el pecho para que la LOM sea perpendicular al gantry.</p></div>
+          <div class="info-item"><strong>Centraje Láser:</strong><p><strong>Frente:</strong> PSM.<br><strong>Lado:</strong> Bajo el labio inferior (mentoniano).<br><strong>Alto:</strong> Conducto Auditivo Externo (CAE).</p></div>
+          <div class="info-item"><strong>Rango de Corte:</strong><p>Desde la base del cráneo hasta el vértice craneal (calota).</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Apnea:</strong><p>- Paciente inmóvil durante la adquisición.<br>- Explicar sensación de calor y sabor metálico si se administra contraste e.v.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha TC Columna Cervical -->
+    <div id="detalle-tac-cervical" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Protocolos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tac_cervical.jpg" alt="Posicionamiento Paciente TC Cervical">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/corte_tac_cervical.jpg" alt="Reconstrucción Sagital TC Cervical">
+            <span class="img-tag">Corte Tomográfico (TC)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>TC de Columna Cervical</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Preparación / Ayuno:</strong><p>Sin ayuno previo para estudio óseo simple. Si requiere contraste (antecedente quirúrgico &lt; 1 año o tumor), ayuno de 6 horas.</p></div>
+          <div class="info-item"><strong>Vía Venosa / Contraste:</strong><p>Teflón 20G en fosa antecubital. Inyección automática de 100 cc si es contrastado.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino con brazos extendidos hacia abajo al costado del cuerpo. Hombros descendidos.</p></div>
+          <div class="info-item"><strong>Centraje Láser:</strong><p><strong>Frente:</strong> PSM.<br><strong>Lado:</strong> Nasion con mentón flectado.<br><strong>Alto:</strong> Punto medio de la estructura cervical.</p></div>
+          <div class="info-item"><strong>Rango de Corte:</strong><p>Adquisición volumétrica continua desde la Base de Cráneo (C0/Occipital) hasta C7-T1.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Apnea:</strong><p>- No tragar saliva ni mover el cuello durante el barrido tomográfico.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha TC Abdomen y Pelvis -->
+    <div id="detalle-tac-abdomen" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Protocolos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tac_abdomen.jpg" alt="Posicionamiento Paciente TC Abdomen">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/corte_tac_abdomen.jpg" alt="Corte Axial TC Abdomen">
+            <span class="img-tag">Corte Tomográfico (TC)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>TC de Abdomen y Pelvis (Rutina / Trifásico)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Preparación / Ayuno:</strong><p>Ingerir 1.5 litros de agua 1 a 2 horas antes (200cc cada 10 min) + 400-500cc inmediatamente previo al examen. Ayuno de sólidos de 6 horas.</p></div>
+          <div class="info-item"><strong>Vía Venosa / Contraste:</strong><p>Teflón 18G ó 20G. Inyector de doble cabezal (Contraste 100cc + Bolo de Suero Fisiológico 20-30cc).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino con ambos brazos elevados por encima de la cabeza.</p></div>
+          <div class="info-item"><strong>Centraje Láser:</strong><p><strong>Frente:</strong> PSM.<br><strong>Lado:</strong> Punto medio a la altura de los peñones/mamilar.<br><strong>Alto:</strong> Punto medio de la cavidad abdominal.</p></div>
+          <div class="info-item"><strong>Rango de Corte:</strong><p>Desde Cúpulas Diafragmáticas hasta el Piso Pelviano / Sínfisis Púbica.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Apnea:</strong><p>- Apnea inspiratoria sostenida durante la fase de disparo.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Pielotac -->
+    <div id="detalle-tac-pielotac" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Protocolos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tac_pielotac.jpg" alt="Posicionamiento Paciente Pielotac PRONO">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/corte_tac_pielotac.jpg" alt="Corte Axial Pielotac">
+            <span class="img-tag">Corte Tomográfico (TC)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pielotac (Litiasis Renal)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Preparación / Ayuno:</strong><p>Ingerir 1 litro de agua 1 hora antes del estudio y **mantenerse sin orinar** para lograr distensión de la vejiga. No requiere ayuno estricto.</p></div>
+          <div class="info-item"><strong>Vía Venosa / Contraste:</strong><p>Examen **Sin Medio de Contraste Endovenoso** (se evalúa la densidad natural de los cálculos renales).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p><strong>DECÚBITO PRONO</strong> (boca abajo) con la cabeza orientada hacia el Gantry y brazos elevados.</p></div>
+          <div class="info-item"><strong>Centraje Láser:</strong><p><strong>Frente:</strong> PSM.<br><strong>Lado:</strong> Punto medio a la altura de las mamilas.<br><strong>Alto:</strong> Punto medio del espesor corporal.</p></div>
+          <div class="info-item"><strong>Rango de Corte:</strong><p>Desde los Polos Renales Superiores hasta la Sínfisis Púbica (incluyendo vejiga llena).</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Apnea:</strong><p>- Apnea inspiratoria profunda durante el barrido.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha TC Rodillas -->
+    <div id="detalle-tac-rodilla" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Protocolos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tac_rodilla.jpg" alt="Posicionamiento Paciente TC Rodillas">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/corte_tac_rodilla.jpg" alt="Corte Axial TC Rodilla">
+            <span class="img-tag">Corte Tomográfico (TC)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>TC de Extremidades (Rodillas)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Preparación / Ayuno:</strong><p>Sin ayuno previo para estudios traumatológicos simples. Ayuno de 6 horas si se sospecha patología tumoral con contraste e.v.</p></div>
+          <div class="info-item"><strong>Vía Venosa / Contraste:</strong><p>Generalmente sin contraste. Vía 20G en caso excepcional de estudio tumoral/partes blandas.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito Supino con las extremidades inferiores extendidas e inmovilizadas en simetría.</p></div>
+          <div class="info-item"><strong>Centraje Láser:</strong><p><strong>Frente:</strong> PSM entre ambas extremidades.<br><strong>Lado:</strong> 3 a 4 traveses de dedo sobre la rótula de la rodilla a evaluar.<br><strong>Alto:</strong> Punto medio de la articulación.</p></div>
+          <div class="info-item"><strong>Rango de Corte:</strong><p>Abarca desde el tercio distal del fémur hasta el tercio proximal de la tibia y peroné.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones / Apnea:</strong><p>- Inmovilidad absoluta de las extremidades inferiores durante el escaneo.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Portafolio de Título - Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('tac-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('tac-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

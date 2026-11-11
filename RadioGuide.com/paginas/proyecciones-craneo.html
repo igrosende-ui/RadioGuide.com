@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Cráneo y Senos Paranasales (SPN)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Orientación digital para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Proyecciones de Cráneo y SPN -->
+    <div id="craneo-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Proyecciones de Cráneo y SPN</h2>
+
+      <!-- Bloque 1: Cráneo AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-craneo-ap')">
+        <div class="card-imagen">
+          <img src="../img/craneo_ap.jpg" alt="Cráneo AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Cráneo AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Cráneo PA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-craneo-pa')">
+        <div class="card-imagen">
+          <img src="../img/craneo_pa.jpg" alt="Cráneo PA">
+        </div>
+        <div class="card-contenido">
+          <h2>Cráneo PA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Cráneo Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-craneo-lateral')">
+        <div class="card-imagen">
+          <img src="../img/craneo_lat.jpg" alt="Cráneo Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Cráneo Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Towne -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-craneo-towne')">
+        <div class="card-imagen">
+          <img src="../img/towne.jpg" alt="Proyección Towne">
+        </div>
+        <div class="card-contenido">
+          <h2>Cráneo - Towne</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: SPN Caldwell -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-spn-caldwell')">
+        <div class="card-imagen">
+          <img src="../img/caldwell.jpg" alt="SPN Caldwell">
+        </div>
+        <div class="card-contenido">
+          <h2>Senos Paranasales - Caldwell</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: SPN Waters -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-spn-waters')">
+        <div class="card-imagen">
+          <img src="../img/waters.jpg" alt="SPN Waters">
+        </div>
+        <div class="card-contenido">
+          <h2>Senos Paranasales - Waters</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7: SPN Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-spn-lateral')">
+        <div class="card-imagen">
+          <img src="../img/spn_lat.jpg" alt="SPN Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Senos Paranasales - Lateral</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Cráneo AP -->
+    <div id="detalle-craneo-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_craneo_ap.jpg" alt="Posicionamiento Paciente Cráneo AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_craneo_ap.jpg" alt="Radiografía Cráneo AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Cráneo AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><Strong>Objetos a quitar:</Strong><p>Piercings, lentes, aros, dentadura removible, gorros, bufandas, mascarillas, etc. </p></div>
+          <div class="info-item"><Strong>Ropa a quitar:</Strong><p>Nada</p></div>
+          <div class="info-item"><strong>Chasis:</strong><p>24 x 30 cm</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro)</p></div>
+          <div class="info-item"><strong>Bucky:</strong><p>Sí (Estativo o Camilla)</p></div>
+          <div class="info-item"><strong>Angulación:</strong><p>0° en Decubito Supino / 90° en Bipedestación</p></div>
+          <div class="info-item"><strong>kV</strong><p>70-80 kV</p></div>
+          <div class="info-item"><strong>mAs</strong><p>20-32 mAs</p></div> 
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea durante el disparo.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Cráneo PA -->
+    <div id="detalle-craneo-pa" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_craneo_pa.jpg" alt="Posicionamiento Paciente Cráneo PA">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_craneo_pa.jpg" alt="Radiografía Cráneo PA">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Cráneo PA (Posteroanterior)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal)</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm / 1 m</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo o camilla)</p></div>
+          <div class="info-item"><strong>Rayo Central (RC):</strong><p>0° (Perpendicular al RI)</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal sobre Plano Sagital Medio (PSM). Transversal ingresando por la protuberancia occipital externa y emergiendo a nivel del Nasion.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito prono, de pie o sentado frente al estativo. Apoyo de frente y nariz sobre la superficie. Alineación estricta del PSM y la <strong>LHA (Línea Horizontal Alemana)</strong> perpendicular al Receptor.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea durante el disparo.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Cráneo Lateral -->
+    <div id="detalle-craneo-lateral" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_craneo_lat.jpg" alt="Posicionamiento Paciente Cráneo Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_craneo_lat.jpg" alt="Radiografía Cráneo Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Cráneo Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Transversal)</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí</p></div>
+          <div class="info-item"><strong>Rayo Central (RC):</strong><p>0° (Perpendicular al RI)</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal sobre Plano Medio Coronal a nivel del <strong>CAE (Conducto Auditivo Externo)</strong>. Transversal a nivel de Nasion o Glabela.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>De pie, sentado o decúbito prono con la cabeza en lateral estricto apoyada en el RI. <strong>LIP (Línea Interpupilar)</strong> perpendicular al plano y <strong>Plano Sagital Medio (PSM)</strong> paralelo.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea durante el disparo.<br>- Protección gonadal.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Towne -->
+    <div id="detalle-craneo-towne" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_towne.jpg" alt="Posicionamiento Paciente Towne">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_towne.jpg" alt="Radiografía Towne">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Towne (Axial de Cráneo)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal)</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en <strong>30° cráneo-caudal</strong> respecto a la LOM o <strong>37°-40° caudal</strong> respecto a la LHA.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal sobre PSM. Transversal a <strong>4 a 6 cm por sobre la glabela</strong>, proyectándose el haz por las mastoides.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito supino, de pie o sentado. Bóveda craneana apoyada en el RI. Flexionar columna cervical bajando el mentón para dejar la <strong>LOM perpendicular</strong>, o mantener la <strong>LHA perpendicular</strong> ajustando angulación a 37°-40°.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea durante el disparo.<br>- Protección gonadal.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha SPN Caldwell -->
+    <div id="detalle-spn-caldwell" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_caldwell.jpg" alt="Posicionamiento Paciente Caldwell">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_caldwell.jpg" alt="Radiografía Caldwell">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Senos Paranasales - Caldwell (Frontonasal)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal)</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en <strong>15° a 20° hacia caudal</strong>.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el PSM; por el lado a nivel del <strong>Nasion</strong>.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>De pie o sentado. Apoyar <strong>frente y nariz</strong> en el estativo de manera que la <strong>LOM (Línea Órbito-Meatal)</strong> quede strictly perpendicular al estativo.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria.<br>- Protección gonadal.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha SPN Waters -->
+    <div id="detalle-spn-waters" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_waters.jpg" alt="Posicionamiento Paciente Waters">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_waters.jpg" alt="Radiografía Waters">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Senos Paranasales - Waters (Mento-nasal)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal)</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en <strong>15° a 20° cráneo-caudal</strong>.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el PSM; por el lado a nivel del <strong>Acantion</strong>.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>De pie o sentado. Apoyar <strong>nariz y mentón</strong> en el estativo. Abrir la boca para observar los senos esfenoidales a través de la arcada dentaria. La <strong>LAM (Línea Acanto-Meatal)</strong> debe quedar perpendicular a la mesa/estativo.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria.<br>- Protección gonadal.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.7 Ficha SPN Lateral -->
+    <div id="detalle-spn-lateral" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Cráneo</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_spn_lat.jpg" alt="Posicionamiento Paciente SPN Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_spn_lat.jpg" alt="Radiografía SPN Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Senos Paranasales - Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal)</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí</p></div>
+          <div class="info-item"><strong>Rayo Central (RC):</strong><p>0° Perpendicular al centro del chasis.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Ubicado a <strong>dos traveses de dedo hacia anterior del CAE</strong> (Conducto Auditivo Externo).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>De pie o sentado en <strong>lateral estricto</strong>. <strong>PSM</strong> paralelo a la mesa/estativo y <strong>LIP (Línea Interpupilar)</strong> perpendicular.</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria.<br>- Protección gonadal.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Portafolio de Título - Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('craneo-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('craneo-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

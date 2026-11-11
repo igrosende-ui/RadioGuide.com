@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Posicionamiento del Paciente</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma digital para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <h2 class="titulo-seccion">Posicionamiento y Preparación del paciente</h2>
+    <p style="text-align: center; color: #64748b; margin-bottom: 30px;">
+      Selecciona una modalidad para acceder a las pautas de posicionamiento, protocolos y preparación clínica.
+    </p>
+
+    <!-- NIVEL 1: Las 3 Modalidades Principales -->
+    <div class="modalidades-grid">
+
+      <!-- 1. RAYOS X (Radiología Convencional) -->
+      <a href="#rayosx-estudios" onclick="mostrarRayosX(event)" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/rayos_x.jpg" alt="Rayos X">
+          </div>
+          <div class="card-contenido">
+            <h2>Rayos X (Radiología Convencional)</h2>
+            <p>Proyecciones anatómicas de Cráneo, Tórax, Abdomen, Pelvis, Columna y Extremidades.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. ESCÁNER O TC -->
+      <a href="proyecciones-tac.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/scanner.jpg" alt="Escáner o TAC">
+          </div>
+          <div class="card-contenido">
+            <h2>Escáner o TC (Tomografía Computarizada)</h2>
+            <p>Protocolos clínicos, preparación previa (ayuno y vía venosa), posiciones, centraje y rangos de corte.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. ECOGRAFÍA (Ultrasonido) -->
+      <a href="proyecciones-ecografia.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/ecografia.jpg" alt="Ecografía Ultrasonido">
+          </div>
+          <div class="card-contenido">
+            <h2>Ecografía (Ultrasonido)</h2>
+            <p>Estudios no ionizantes mediante transductores (Convexo, Lineal, Endocavitario), preparación de paciente y ecogenicidades.</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- NIVEL 2: Subsección Desplegable para Estudios dentro de Rayos X -->
+    <div id="rayosx-estudios" style="display: none; margin-top: 30px;">
+      <button class="btn-volver" onclick="ocultarRayosX()" style="margin-bottom: 20px;">← Volver a Modalidades</button>
+      <h3 class="subtitulo-seccion" style="text-align: center; margin-bottom: 25px;">Estudios de Radiología Convencional</h3>
+
+      <!-- 1. Cráneo y Senos Paranasales -->
+      <a href="proyecciones-craneo.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/craneo.jpg" alt="Estudios de Cráneo y SPN">
+          </div>
+          <div class="card-contenido">
+            <h2>Cráneo y Senos Paranasales (SPN)</h2>
+            <p>Proyecciones anatómicas de bóveda craneana y cavidades paranasales: Cráneo AP, Cráneo PA, Cráneo Lateral, Towne, Caldwell, Waters y SPN Lateral.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Tórax y Abdomen -->
+      <a href="proyecciones-torax-abdomen.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/torax_abdomen.jpg" alt="Estudios de Tórax y Abdomen">
+          </div>
+          <div class="card-contenido">
+            <h2>Tórax y Abdomen</h2>
+            <p>Proyecciones fundamentales de caja torácica y cavidad abdominal: Tórax PA, Tórax Lateral, Abdomen AP (Decúbito Supino) y Abdomen Bipedestación.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Pelvis y Columna Vertebral -->
+      <a href="proyecciones-pelvis-columna.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/pelvis_columna.jpg" alt="Estudios de Pelvis y Columna Vertebral">
+          </div>
+          <div class="card-contenido">
+            <h2>Pelvis y Columna Vertebral</h2>
+            <p>Evaluación de la pelvis ósea y eje axial: Pelvis AP, Columna Cervical (AP/Lateral), Columna Dorsal (AP/Lateral) y Columna Lumbar (AP/Lateral).</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Brazos y Manos -->
+      <a href="proyecciones-brazos-manos.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/brazos_manos.jpg" alt="Estudios de Brazos y Manos">
+          </div>
+          <div class="card-contenido">
+            <h2>Brazos y Manos</h2>
+            <p>Proyecciones de miembro superior: Hombro AP, Codo (AP/Lateral), Muñeca (PA/Lateral) y Mano (PA/Oblicua).</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Piernas y Pies -->
+      <a href="proyecciones-piernas-pies.html" style="text-decoration: none; color: inherit;">
+        <div class="card-modalidad">
+          <div class="card-imagen">
+            <img src="../img/piernas_pies.jpg" alt="Estudios de Piernas y Pies">
+          </div>
+          <div class="card-contenido">
+            <h2>Piernas y Pies</h2>
+            <p>Proyecciones de miembro inferior: Cadera AP, Rodilla (AP/Lateral), Tobillo (AP/Lateral) y Pie (AP/Oblicua).</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- LÓGICA DE NAVEGACIÓN Y DESPLIEGUE -->
+  <script>
+    function mostrarRayosX(event) {
+      if (event) event.preventDefault();
+      const gridModalidades = document.querySelector('.modalidades-grid');
+      const bloqueRayosX = document.getElementById('rayosx-estudios');
+
+      if (gridModalidades) gridModalidades.style.display = 'none';
+      if (bloqueRayosX) bloqueRayosX.style.display = 'block';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function ocultarRayosX() {
+      const gridModalidades = document.querySelector('.modalidades-grid');
+      const bloqueRayosX = document.getElementById('rayosx-estudios');
+
+      if (bloqueRayosX) bloqueRayosX.style.display = 'none';
+      if (gridModalidades) gridModalidades.style.display = 'grid';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
