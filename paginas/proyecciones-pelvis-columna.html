@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Pelvis y Columna Vertebral</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Proyecciones de Pelvis y Columna Vertebral -->
+    <div id="pelvis-columna-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Proyecciones de Pelvis y Columna Vertebral</h2>
+
+      <!-- Bloque 1: Pelvis AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pelvis-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_pelvis_ap.jpg" alt="Pelvis AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Pelvis AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Pelvis Lowenstein -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pelvis-lowenstein')">
+        <div class="card-imagen">
+          <img src="../img/rx_pelvis_lowenstein.jpg" alt="Pelvis Lowenstein">
+        </div>
+        <div class="card-contenido">
+          <h2>Pelvis - Lowenstein</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Atlas - Axis C1-C2 (Transoral) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-cervical-transoral')">
+        <div class="card-imagen">
+          <img src="../img/rx_cervical_transoral.jpg" alt="Atlas Axis Transoral">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Cervical - Atlas-Axis C1-C2 (Transoral)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Columna Cervical AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-cervical-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_cervical_ap.jpg" alt="Columna Cervical AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Cervical AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: Columna Cervical Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-cervical-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_cervical_lat.jpg" alt="Columna Cervical Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Cervical Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Columna Dorsal AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-dorsal-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_dorsal_ap.jpg" alt="Columna Dorsal AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Dorsal AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7: Columna Dorsal Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-dorsal-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_dorsal_lat.jpg" alt="Columna Dorsal Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Dorsal Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8: Columna Dorsal Oblicua (OAD/OAI) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-dorsal-oblicua')">
+        <div class="card-imagen">
+          <img src="../img/rx_dorsal_oblicua.jpg" alt="Columna Dorsal Oblicua">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Dorsal Oblicua (OAD / OAI)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 9: Columna Lumbar AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-lumbar-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_lumbar_ap.jpg" alt="Columna Lumbar AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Lumbar AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 10: Columna Lumbar Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-lumbar-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_lumbar_lat.jpg" alt="Columna Lumbar Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Lumbar Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 11: Columna Lumbar Oblicua (OAD/OAI) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-lumbar-oblicua')">
+        <div class="card-imagen">
+          <img src="../img/rx_lumbar_oblicua.jpg" alt="Columna Lumbar Oblicua">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Lumbar Oblicua (OAD / OAI)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 12: Columna Lumbar Dinámicas -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-lumbar-dinamicas')">
+        <div class="card-imagen">
+          <img src="../img/rx_lumbar_dinamicas.jpg" alt="Columna Lumbar Dinámicas">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Lumbar Dinámicas (Flexión / Extensión)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 13: 5° Espacio AP y Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-quinto-espacio')">
+        <div class="card-imagen">
+          <img src="../img/rx_quinto_espacio.jpg" alt="Proyección 5° Espacio L5-S1">
+        </div>
+        <div class="card-contenido">
+          <h2>5° Espacio L5-S1 (AP y Lateral)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 14: Columna Total AP y Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-columna-total')">
+        <div class="card-imagen">
+          <img src="../img/rx_columna_total.jpg" alt="Columna Total AP y Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Columna Total (Espinograma AP y Lateral)</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Pelvis AP -->
+    <div id="detalle-pelvis-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pelvis_ap.jpg" alt="Posicionamiento Paciente Pelvis AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pelvis_ap.jpg" alt="Radiografía Pelvis AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pelvis AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cinturones, botones metálicos, cierres, llaves, monedas, piercings pélvicos/umbilicales.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Pantalón y prendas con metal (usar bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Transversal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el Plano Sagital Medio (PSM); por el lado dos traveses de dedo sobre la Sínfisis Púbica (SP).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito dorsal, pelvis simétrica en la mesa, piernas estiradas con una rotación a medial de 15° (para desproyectar cuellos femorales), brazos a los lados del cuerpo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>25 - 40 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidia.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Lowenstein -->
+    <div id="detalle-pelvis-lowenstein" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pelvis_lowenstein.jpg" alt="Posicionamiento Paciente Lowenstein">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pelvis_lowenstein.jpg" alt="Radiografía Pelvis Lowenstein">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pelvis - Lowenstein</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cinturones, botones metálicos, cierres, llaves, monedas en región pélvica.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Pantalón y ropa con metal (usar bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Transversal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el PSM; por el lado dos traveses de dedo sobre la Sínfisis Púbica (SP), cuidando que el borde superior del chasis quede por encima de las crestas ilíacas.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito dorsal, brazos extendidos al lado del cuerpo. Piernas flectadas en un ángulo de 90°, plantas de los pies contrapuestas y separación de rodillas en abducción máxima (45°).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>25 - 40 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidia.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Atlas - Axis Transoral -->
+    <div id="detalle-cervical-transoral" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_cervical_transoral.jpg" alt="Posicionamiento Atlas Axis Transoral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_cervical_transoral.jpg" alt="Radiografía Atlas Axis Transoral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Atlas - Axis C1-C2 (Transoral o Charnela)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Prótesis dentales removibles, piercings linguales/labiales, aros, collares, lentes.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Nada (despejar cuello).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Rejilla Potter Bucky).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal en PSM; Transversal ingresando directamente por el centro de la boca abierta (alineando borde inferior de incisivos superiores con base occipital / apófisis mastoides).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito supino, de pie o sentado, apoyando bóveda craneana sobre el RI. Elevar levemente el mentón y abrir la boca ampliamente sin mover la cabeza.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 80 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>16 - 25 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Mantener la boca bien abierta y apoyar la lengua en el piso de la boca (evita superposición sobre la apófisis odontoides).<br>- Apnea durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Columna Cervical AP -->
+    <div id="detalle-cervical-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_cervical_ap.jpg" alt="Posicionamiento Columna Cervical AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_cervical_ap.jpg" alt="Radiografía Columna Cervical AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Cervical AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Collares, cadenas, aros, piercings, horquillas metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar cuello y parte superior de hombros.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Rejilla Potter Bucky).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado de 15° a 20° en dirección Caudo-Craneal (cefálico).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal sobre Plano Medio Sagital (PSM). Transversal ingresando a nivel de C4 (borde inferior del cartílago tiroides).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito supino, de pie o sentado, apoyando bóveda craneana sobre la superficie del RI. Elevar el mentón de manera que la línea oclusal y la apófisis mastoides queden perpendiculares al RI (evalúa de C3 a D2).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 75 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>12 - 20 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Contener la respiración y NO TRAGAR durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha Columna Cervical Lateral -->
+    <div id="detalle-cervical-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_cervical_lat.jpg" alt="Posicionamiento Columna Cervical Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_cervical_lat.jpg" alt="Radiografía Columna Cervical Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Cervical Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Aros, collares, cadenas, horquillas metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar cuello y hombros.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>150 a 180 cm (para compensar la distancia objeto-película de los hombros) / 100 cm según equipo.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Horizontal a nivel de C4 (plano coronal medio del cuello).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>De pie o sentado en lateral estricto con el hombro apoyado en el estativo. Elevar ligeramente el mentón para evitar superposición mandibular y descender al máximo ambos hombros para visualizar desde C1 hasta C7-T1.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 80 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>16 - 25 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Contener la respiración en apnea espiratoria (ayuda a descender los hombros).<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Columna Dorsal AP -->
+    <div id="detalle-dorsal-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_dorsal_ap.jpg" alt="Posicionamiento Columna Dorsal AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_dorsal_ap.jpg" alt="Radiografía Columna Dorsal AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Dorsal AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, collares, sostén con barba o broches metálicos, cierres.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (usar bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 40 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el PSM; por el lado en el punto medio entre el apéndice xifoides y el manubrio esternal (aprox. T6-T7).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito dorsal con el PSM perpendicular a la mesa, brazos al lado del cuerpo y piernas estiradas (o levemente flectadas para reducir cifosis).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>25 - 40 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- En apnea espiratoria (homogeneiza la densidad pulmonar sobre la columna torácica).<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.7 Ficha Columna Dorsal Lateral -->
+    <div id="detalle-dorsal-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_dorsal_lat.jpg" alt="Posicionamiento Columna Dorsal Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_dorsal_lat.jpg" alt="Radiografía Columna Dorsal Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Dorsal Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Elementos metálicos torácicos, cadenas, sostén.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 40 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente 4 traveses de dedo desde el centro de la estructura hacia posterior; por el lado a nivel del vértice escapular.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito lateral estricto, piernas semiflectadas con almohada entre las rodillas para evitar inclinación de caderas. Brazos elevados hacia adelante. La columna debe quedar paralela a la mesa (corregir con esponjas radiotransparentes bajo cintura si es necesario).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>80 - 90 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>40 - 60 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- En apnea espiratoria (o respiración suave durante exposición prolongada para difuminar arcos costales).</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.8 Ficha Columna Dorsal Oblicua -->
+    <div id="detalle-dorsal-oblicua" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_dorsal_oblicua.jpg" alt="Posicionamiento Columna Dorsal Oblicua">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_dorsal_oblicua.jpg" alt="Radiografía Columna Dorsal Oblicua">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Dorsal Oblicua (OAD / OAI)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Objetos metálicos en tórax y abdomen alto.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 40 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente aproximadamente a 1 o 2 traveses de dedo hacia medial de la EIAS alejada de la mesa; por el lado el punto ubicado entre el apéndice xifoides y el manubrio esternal.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Desde decúbito dorsal, elevar el cuerpo unos 45° con respecto a la mesa apoyando el lado de interés (con cuña de espuma de 70°/20°). Flectar la pierna contraria formando un "4" y acomodar brazos para dar equilibrio y sostén.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>30 - 50 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- En apnea espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.9 Ficha Columna Lumbar AP -->
+    <div id="detalle-lumbar-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_lumbar_ap.jpg" alt="Posicionamiento Columna Lumbar AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_lumbar_ap.jpg" alt="Radiografía Columna Lumbar AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Lumbar AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cinturones, botones metálicos, cierres, piercings umbilicales.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Pantalón y prendas con metal (usar bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal) o 35 x 43 cm si se incluye sacro. Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el PSM; por el lado el punto medio entre el apéndice xifoides y la línea que une ambas EIAS (crestas ilíacas / L3-L4).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito dorsal con el PSM perpendicular a la mesa, brazos al lado del cuerpo. Flectar rodillas y caderas apoyando plantas de los pies en la camilla para rectificar la lordosis lumbar y abrir espacios intervertebrales.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>30 - 50 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.10 Ficha Columna Lumbar Lateral -->
+    <div id="detalle-lumbar-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_lumbar_lat.jpg" alt="Posicionamiento Columna Lumbar Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_lumbar_lat.jpg" alt="Radiografía Columna Lumbar Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Lumbar Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Botones metálicos, cierres, cinturones.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal) o 35 x 43 cm. Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente 4 traveses de dedo del borde posterior de la piel hacia anterior; por el lado 2 traveses de dedo sobre la cresta ilíaca.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito lateral estricto, piernas semiflectadas con almohada entre rodillas. Colocar soporte/esponja radiolúcida bajo la cintura para mantener el eje longitudinal de la columna paralelo a la mesa.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>85 - 95 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>50 - 80 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.11 Ficha Columna Lumbar Oblicua -->
+    <div id="detalle-lumbar-oblicua" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_lumbar_oblicua.jpg" alt="Posicionamiento Columna Lumbar Oblicua">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_lumbar_oblicua.jpg" alt="Radiografía Columna Lumbar Oblicua">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Lumbar Oblicua (OAD / OAI)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Botones metálicos, cierres, piercings abdominales.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente aproximadamente a 1 o 2 traveses de dedo hacia medial de la EIAS alejada de la mesa; por el lado el punto ubicado entre el apéndice xifoides y la línea que une ambas EIAS.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Rotación oblicua de 45° apoyando el lado de interés para evaluar articulaciones cigoapofisiarias y el istmo (pars interarticularis). Anatomía del "Perrito de Lachapelle": Nariz (apófisis transversa), Ojo (pedículo), Oreja (apófisis articular sup.), Cuello (pars interarticularis/istmo), Pata delantera (apófisis articular inf.).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>80 - 90 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>40 - 60 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.12 Ficha Columna Lumbar Dinámicas -->
+    <div id="detalle-lumbar-dinamicas" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_lumbar_dinamicas.jpg" alt="Posicionamiento Columna Lumbar Dinámicas">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_lumbar_dinamicas.jpg" alt="Radiografía Columna Lumbar Dinámicas">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Lumbar Dinámicas (Flexión y Extensión)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Botones metálicos, cierres, cinturones.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal) por cada proyección. Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural en bipedestación).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente 4 traveses de dedo del borde posterior de la piel hacia anterior; por el lado 2 traveses de dedo sobre la cresta ilíaca.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>En bipedestación y en lateral estricto, brazos cruzados tomándose los codos y elevados a 90°. Realizar dos tomas separadas: una en hiperflexión anterior máxima y otra en hiperextensión posterior máxima del segmento lumbar (sin rotar la pelvis).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>85 - 95 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>50 - 80 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- En apnea espiratoria. Evalúa inestabilidad vertebral (anterolistesis / retrolistesis).<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.13 Ficha 5° Espacio AP y Lateral -->
+    <div id="detalle-quinto-espacio" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_quinto_espacio.jpg" alt="Posicionamiento 5° Espacio L5-S1">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_quinto_espacio.jpg" alt="Radiografía 5° Espacio L5-S1">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Proyección Localizada 5° Espacio L5-S1 (AP y Lateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Botones metálicos, cierres, joyas pélvicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>5° Espacio AP angulado en 15° a 25° Caudo-Craneal. 5° Espacio Lateral angulado en 5° a 8° Cráneo-Caudal (si el espacio está abierto en lateral previa) o 5° Caudo-Craneal / 0° según inclinación del sacro.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>AP por el frente PSM y por el lado a nivel de las EIAS. Lateral por el frente 4 traveses de dedo hacia anterior desde borde posterior de la piel y por el lado dos traveses de dedo bajo la cresta ilíaca.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>AP en decúbito dorsal con PSM alineado. Lateral en decúbito lateral estricto con piernas semiflectadas, almohada entre rodillas y apoyo radiolúcido en cintura.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>80 - 85 kV (AP) / 90 - 95 kV (Lateral)</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>35 - 50 mAs (AP) / 60 - 90 mAs (Lateral)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.14 Ficha Columna Total AP y Lateral -->
+    <div id="detalle-columna-total" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Pelvis y Columna Vertebral</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_columna_total.jpg" alt="Posicionamiento Columna Total">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_columna_total.jpg" alt="Radiografía Columna Total">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Columna Total AP y Lateral (Espinograma)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Todos los elementos metálicos desde el cuello hasta la pelvis (cadenas, sostén, botones, cierres, cinturones).</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen abierta hacia atrás.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 90 cm (Longitudinal) o detector largo digital (Stitching). Folio 3 velocidades (en sistema convencional).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>180 cm (1.80 metros).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural vertical de cuerpo entero).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente en el PSM; por el lado a nivel del apéndice xifoides (punto medio del receptor largo).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en bipedestación, descalzo, piernas juntas y estiradas. En AP: brazos extendidos al lado del cuerpo. En Lateral: brazos elevados hacia adelante apoyados en soporte para despejar columna dorsal y lumbar.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>80 - 90 kV (AP) / 90 - 100 kV (Lateral)</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>40 - 60 mAs (AP) / 60 - 90 mAs (Lateral)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('pelvis-columna-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('pelvis-columna-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

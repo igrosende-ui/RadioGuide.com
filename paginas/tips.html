@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Tips Clínicos</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Ajuste dentro de cada ficha detallada: imágenes arriba y contenido/título debajo */
+    .ficha-detalle-container .ficha-card {
+      flex-direction: column;
+    }
+    .ficha-detalle-container .ficha-galeria {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .ficha-detalle-container .ficha-galeria .ficha-img-box {
+      flex: 1;
+    }
+    .ficha-detalle-container .ficha-info {
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      .ficha-detalle-container .ficha-galeria {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html" class="active">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Índice de 10 Tips Clínicos -->
+    <div id="tips-indice">
+      <h2 class="titulo-seccion">Tips Clínicos</h2>
+
+      <!-- Bloque 1 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-1')">
+        <div class="card-imagen">
+          <img src="../img/tip_1.jpg" alt="Rol del Practicante/Interno">
+        </div>
+        <div class="card-contenido">
+          <h2>Rol del Practicante/Interno</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-2')">
+        <div class="card-imagen">
+          <img src="../img/tip_2.jpg" alt="Presentación Personal">
+        </div>
+        <div class="card-contenido">
+          <h2>Presentación Personal</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-3')">
+        <div class="card-imagen">
+          <img src="../img/tip_3.jpg" alt="Lavado de Manos">
+        </div>
+        <div class="card-contenido">
+          <h2>Lavado de Manos</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-4')">
+        <div class="card-imagen">
+          <img src="../img/tip_4.jpg" alt="Anamnesis">
+        </div>
+        <div class="card-contenido">
+          <h2>Anamnesis</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-5')">
+        <div class="card-imagen">
+          <img src="../img/tip_5.jpg" alt="Trato hacia el Paciente">
+        </div>
+        <div class="card-contenido">
+          <h2>Trato hacia el Paciente</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-6')">
+        <div class="card-imagen">
+          <img src="../img/tip_6.jpg" alt="Protecciones">
+        </div>
+        <div class="card-contenido">
+          <h2>Protecciones</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-7')">
+        <div class="card-imagen">
+          <img src="../img/tip_7.jpg" alt="Salas de Examen">
+        </div>
+        <div class="card-contenido">
+          <h2>Salas de Examen</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-8')">
+        <div class="card-imagen">
+          <img src="../img/tip_8.jpg" alt="Exámenes">
+        </div>
+        <div class="card-contenido">
+          <h2>Exámenes</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 9 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-9')">
+        <div class="card-imagen">
+          <img src="../img/tip_9.jpg" alt="Artefactos y Metales">
+        </div>
+        <div class="card-contenido">
+          <h2>Artefactos y Metales</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 10 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tip-10')">
+        <div class="card-imagen">
+          <img src="../img/tip_10.jpg" alt="Tiempos">
+        </div>
+        <div class="card-contenido">
+          <h2>Tiempos</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales (1 a 10) -->
+
+    <!-- Ficha 1: Rol del Practicante/Interno -->
+    <div id="detalle-tip-1" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_1_a.jpg" alt="Rol del Practicante en Imagenología">
+            <span class="img-tag">Rx, Escáner, Eco y Resonancia</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_1_b.jpg" alt="Supervisión Clínica">
+            <span class="img-tag">Aprendizaje Activo</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Rol del Practicante/Interno</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Estar en práctica o internado es el puente entre la teoría y la realidad hospitalaria. Tu papel es apoyar al equipo en la recepción del paciente, preparar la sala, ayudar en el posicionamiento y aprender el ritmo de trabajo en Radiografía, Escáner, Ecografía y Resonancia, siempre respaldado por tu tutor.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Nadie espera que lo sepas todo el primer día, pero sí que tengas buena disposición, respeto por el paciente y criterio para pedir confirmación antes de disparar un equipo, pasar contraste o ingresar a alguien a sala.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Anda siempre con una libreta pequeña y un lápiz en el bolsillo; anotar los trucos de cada sala te salva de preguntar lo mismo dos veces y demuestra interés. Si tienes dudas, consúltalas con tu guía lejos del paciente para mantener su tranquilidad.<br>• En Radiografía: Atrévete a posicionar y colimar tú mismo, pero pídele a tu tutor que le dé una mirada rápida antes de salir a disparar.<br>• En Escáner y Resonancia: Ofrece ayuda para acomodar al paciente en la camilla, poner cojines o bobinas y dejarlo cómodo mientras tu guía configura la consola.<br>• En Ecografía: Mantente atento a la pantalla y ten a mano el gel y el papel; observar cómo el operador busca cada estructura te entrena el ojo clínico.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 2: Presentación Personal -->
+    <div id="detalle-tip-2" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_2_a.jpg" alt="Uniforme Clínico y Credencial">
+            <span class="img-tag">Imagen Profesional</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_2_b.jpg" alt="Seguridad y Dosímetro">
+            <span class="img-tag">Comodidad y Seguridad</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Presentación Personal</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Tu presentación es tu primera carta de presentación frente al paciente y al equipo de salud. Más allá de verse ordenado, cumple una función directa de higiene, comodidad y seguridad en todas las unidades de Imagenología.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Uniforme limpio, calzado cerrado y cómodo para caminar todo el turno, cabello bien tomado, uñas cortas sin esmalte, cero accesorios en manos o muñecas y tu credencial junto al dosímetro siempre visibles.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Deja anillos, pulseras y reloj en tu bolso antes de entrar al servicio; así evitas rasguñar sin querer a un paciente al ayudarlo y puedes lavarte las manos sin obstáculos.<br>• En Radiografía y Escáner: Acostúmbrate a revisar cada mañana que llevas puesto tu dosímetro en el uniforme; que se vuelva tan automático como ponerte la credencial.<br>• En Ecografía: Evita mangas largas o sueltas que terminen manchadas con gel al pasar sobre el paciente.<br>• En Resonancia: Haz el hábito de vaciar tus bolsillos antes de acercarte a la sala del imán; llaves, monedas, tijeras o el celular pueden convertirse en un peligro real o echarse a perder al instante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 3: Lavado de Manos -->
+    <div id="detalle-tip-3" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_3_a.jpg" alt="Lavado Clínico de Manos">
+            <span class="img-tag">Cuidado Mutuo</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_3_b.jpg" alt="Higienización con Alcohol Gel">
+            <span class="img-tag">Hábito Clínico</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Lavado de Manos</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Es el gesto más simple y poderoso para cuidar tanto a los pacientes como a ti mismo. En Imagenología pasan decenas de personas por turno por las mismas camillas, equipos y accesorios, por lo que mantener las manos limpias corta de raíz cualquier contagio.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Alternar el lavado con agua y jabón y el uso de alcohol gel en cada atención, recordando que los guantes se usan para tareas puntuales pero jamás reemplazan la higiene de manos.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Crea el reflejo de usar alcohol gel justo después de acomodar al paciente y antes de ir a tocar el teclado o el mouse de la estación de trabajo.<br>• En Radiografía: Higieniza tus manos cada vez que manipules chasis, detectores o bandas de sujeción entre un paciente y otro.<br>• En Escáner: Lávate bien las manos con agua y jabón antes de ponerte guantes para canalizar una vía venosa y apenas te los saques al terminar.<br>• En Ecografía y Resonancia: No olvides limpiar tus manos después de retirar el gel del paciente o de recoger bobinas, correas y fonos auditivos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 4: Anamnesis -->
+    <div id="detalle-tip-4" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_4_a.jpg" alt="Entrevista Clínica al Paciente">
+            <span class="img-tag">Escucha Activa</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_4_b.jpg" alt="Cuestionario de Seguridad">
+            <span class="img-tag">Prevención de Errores</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Anamnesis</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Es esa conversación breve pero clave antes de empezar el examen. Sirve para confirmar que estás atendiendo a la persona correcta, entender qué le pasa y asegurarte de que cumple con las condiciones de seguridad para el estudio.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Confirmar nombre completo y RUT, escuchar la historia del paciente con atención y verificar los requisitos propios de cada modalidad antes de pasar a la sala.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Haz preguntas abiertas para que el paciente te cuente con sus palabras qué le duele y de qué lado ("¿Cuál es la rodilla que le molesta?"); muchas veces así descubres que la orden médica venía cruzada.<br>• En Radiografía: En mujeres en edad fértil, pregunta siempre de forma amable y directa si existe alguna posibilidad de embarazo.<br>• En Escáner: Si el examen lleva contraste, confirma el ayuno, si es alérgico a algo, si toma medicamentos como metformina y revisa que tenga su examen de función renal al día.<br>• En Ecografía: Antes de acostar al paciente, asegúrate de que venga bien preparado (con ayuno si es abdominal o con ganas de orinar si es pelviana o renal).<br>• En Resonancia: Tómate el tiempo de repasar la encuesta de seguridad punto por punto; preguntar por cirugías antiguas, marcapasos o metales en el cuerpo es vital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 5: Trato hacia el Paciente -->
+    <div id="detalle-tip-5" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_5_a.jpg" alt="Atención Humanizada">
+            <span class="img-tag">Calidez y Empatía</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_5_b.jpg" alt="Contención al Paciente">
+            <span class="img-tag">Acompañamiento</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Trato hacia el Paciente</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Quien llega a Imagenología suele venir con dolor, nervios o incertidumbre por un diagnóstico. Un trato amable, cercano y respetuoso calma al paciente y hace que todo el examen fluya mucho mejor.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Mirar a los ojos al saludar, presentarse por tu nombre, hablar en palabras simples sin tecnicismos innecesarios y cuidar siempre su pudor e intimidad.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Explica siempre lo que vas a hacer antes de tocar al paciente y ofrécele una mano al subir o bajar de la camilla; la confianza baja la ansiedad de inmediato.<br>• En Radiografía: Si el paciente viene adolorido por una caída o fractura, pídele que él mismo mueva la extremidad hasta donde pueda antes de acomodarla tú.<br>• En Escáner: Avísale antes de pasar el contraste que va a sentir un calorcito en el cuerpo y un sabor raro en la boca; saber que es normal evita que se asuste en medio del examen.<br>• En Ecografía: Tapa con sábana de papel las zonas que no necesitas descubrir y avísale antes de poner el gel si está frío.<br>• En Resonancia: Cuéntale que el equipo suena fuerte, dile más o menos cuánto va a durar y pásale el timbre en la mano asegurándole que lo estás viendo y escuchando todo el tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 6: Protecciones -->
+    <div id="detalle-tip-6" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_6_a.jpg" alt="Radioprotección y Blindaje">
+            <span class="img-tag">Cuidado del Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_6_b.jpg" alt="Seguridad Física">
+            <span class="img-tag">Prevención de Riesgos</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Protecciones</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Cuidar al paciente y al equipo frente a los riesgos físicos de cada sala: ya sea usando la menor radiación posible, protegiendo los oídos del ruido o evitando caídas y lesiones en la camilla.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Aplicar el sentido común y los protocolos de seguridad según el equipo en el que estés trabajando, sin descuidar jamás al paciente mientras está sobre la mesa.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Nunca dejes solo ni sin sujeción a un niño, a un adulto mayor o a alguien mareado sobre la camilla; una caída en sala se previene estando atento.<br>• En Radiografía: Ajusta bien la luz del colimador solo a la zona que necesitas ver (recortar la foto después en el computador no reduce la radiación) y ponle delantal plomado al acompañante si debe quedarse adentro.<br>• En Escáner: No pongas protectores plomados dentro de la zona que va a escanear el equipo, porque el escáner compensará subiendo la radiación y echará a perder la imagen.<br>• En Ecografía: Usa siempre funda protectora en transductores endocavitarios y evita presionar fuerte sobre zonas muy inflamadas o sensibles.<br>• En Resonancia: Ponle siempre tapones o fonos al paciente para cuidar sus oídos y usa almohadillas para que sus manos o piernas no queden tocando directo las paredes del túnel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 7: Salas de Examen -->
+    <div id="detalle-tip-7" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_7_a.jpg" alt="Preparación de Sala">
+            <span class="img-tag">Orden en Sala</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_7_b.jpg" alt="Desinfección de Equipos">
+            <span class="img-tag">Limpieza y Fluidez</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Salas de Examen</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Tener la sala ordenada, limpia y armada antes de llamar al paciente marca la diferencia entre una atención estresante y una fluida. Además, mantiene un ambiente seguro e higiénico para todos.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Limpiar las superficies después de cada atención, cambiar la sabanilla de papel y dejar el equipo preparado según el examen que viene en la lista.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Mantén los cables ordenados y el piso libre de obstáculos para que ni el paciente ni tú tropiecen al moverse.<br>• En Radiografía: Deja el tubo centrado y limpia el detector digital con las toallas adecuadas sin rociarle líquido encima.<br>• En Escáner: Antes de hacer pasar al paciente, revisa que la inyectora esté lista y sin burbujas de aire, y que los apoya-brazos estén limpios.<br>• En Ecografía: Limpia el gel del transductor apenas termine el examen para que no se seque ni dañe el cabezal, y baja un poco la luz de la sala para ver bien la pantalla.<br>• En Resonancia: Deja conectada la bobina del estudio que sigue, asegúrate de cerrar bien la puerta de la sala al salir y recuerda que el carro de paro metálico nunca entra a la sala del imán.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 8: Exámenes -->
+    <div id="detalle-tip-8" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_8_a.jpg" alt="Criterios Técnicos de Imagen">
+            <span class="img-tag">Criterio Clínico</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_8_b.jpg" alt="Revisión en Consola">
+            <span class="img-tag">Revisión antes de Despedir</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Exámenes</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>Cada estudio busca responder una pregunta médica. Más allá de apretar botones, importa asegurarse de que las imágenes salgan nítidas, completas y útiles para que el médico radiólogo pueda informar con seguridad.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Revisar siempre las imágenes en pantalla antes de despedir al paciente o sacarle la vía venosa, comprobando que no haya movimiento ni zonas cortadas.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Tómate diez segundos para mirar bien el resultado en el monitor mientras el paciente aún está en el vestidor; si algo salió movido o incompleto, es mucho mejor repetirlo ahí mismo que llamarlo de vuelta otro día.<br>• En Radiografía: Acostúmbrate a tomar siempre dos vistas en ángulo recto (como frente y perfil) en huesos y articulaciones, y pon siempre la marca de derecha o izquierda.<br>• En Escáner: Revisa en el barrido inicial que no hayas cortado ninguna parte de la zona pedida y mira los cortes en distintos planos antes de dar por cerrado el estudio.<br>• En Ecografía: Observa siempre cada órgano o hallazgo desde dos ángulos distintos y ajusta bien la profundidad y el brillo para que la imagen se vea clara.<br>• En Resonancia: Orienta los cortes siguiendo la forma real de la anatomía y confirma que las secuencias principales salieron nítidas antes de sacar al paciente del túnel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 9: Artefactos y Metales -->
+    <div id="detalle-tip-9" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_9_a.jpg" alt="Artefactos en Rx y Escáner">
+            <span class="img-tag">Preparación Previa</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_9_b.jpg" alt="Artefactos en Eco y Resonancia">
+            <span class="img-tag">Imágenes Limpias</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Artefactos y Metales</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>A veces una cadena olvidada, un broche o hasta poco gel en el transductor crean manchas, destellos o sombras en la imagen que pueden tapar una lesión o confundirse con algo que el paciente no tiene.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Anticiparse revisando bien al paciente antes de empezar, explicándole qué cosas debe sacarse o qué ropa conviene cambiar por una bata.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: No te quedes solo con preguntar "¿Trae algo metálico?"; muchas veces la gente no recuerda un collar fino, un broche o un parche en la piel. Cuando tengas duda, mejor pasa bata de examen.<br>• En Radiografía: Pide retirar cadenas, aros, sostenes con broches o varillas, poleras con estampados plásticos gruesos y trenzas de pelo mojado sobre el pecho.<br>• En Escáner: Recuerda pedir que se saquen prótesis dentales removibles y aros en estudios de cabeza o cuello, y pide subir los brazos sobre la cabeza en estudios de tórax o abdomen.<br>• En Ecografía: Usa suficiente gel para que no quede aire entre el transductor y la piel, ya que el aire bloquea el sonido y deja sombras negras.<br>• En Resonancia: Pide cambiar toda la ropa por bata clínica y retirar maquillaje brillante, pinches, piercings y parches medicinales para evitar manchas negras en la imagen y prevenir quemaduras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ficha 10: Tiempos -->
+    <div id="detalle-tip-10" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Tips Clínicos</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/tip_10_a.jpg" alt="Tiempos de Contraste y Exposición">
+            <span class="img-tag">Sincronización</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/tip_10_b.jpg" alt="Gestión del Tiempo Clínico">
+            <span class="img-tag">Organización del Turno</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tiempos</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿De qué se trata?:</strong>
+            <p>En Imagenología el tiempo juega doble: por un lado está la organización de la agenda para que los pacientes no esperen de más, y por otro, la precisión técnica de disparar o escanear en el segundo exacto.</p>
+          </div>
+          <div class="info-item">
+            <strong>Lo esencial en el día a día:</strong>
+            <p>Ser puntual, preparar al paciente con calma antes de iniciar y coordinar bien la respiración o el paso del medio de contraste para lograr imágenes nítidas a la primera.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Tips Clínicos:</strong>
+            <p>• Para todas las áreas: Llega unos 15 minutos antes de empezar el turno para revisar la lista de pacientes, priorizar a quienes vienen en ayuno o con mucho dolor y ensayar la respiración con el paciente antes de empezar.<br>• En Radiografía: Usa disparos rápidos en niños, personas mayores con temblor o estudios de tórax para que la respiración o un movimiento leve no salgan movidos.<br>• En Escáner: Cuida los tiempos de espera tras inyectar contraste para captar bien las arterias o las venas en el momento justo.<br>• En Ecografía: Sigue siempre un orden lógico al revisar los órganos para no saltarte nada y hacer un examen ágil y cómodo para el paciente.<br>• En Resonancia: Lanza primero las secuencias más importantes del estudio por si el paciente se cansa, le duele la espalda o siente claustrofobia hacia el final, e írale avisando cuánto falta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('tips-indice').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAIndice() {
+      document.getElementById('tips-indice').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

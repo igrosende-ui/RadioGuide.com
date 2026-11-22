@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Extremidad Inferior (Piernas y Pies)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Proyecciones de Extremidad Inferior (Piernas y Pies) -->
+    <div id="piernas-pies-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Proyecciones de Extremidad Inferior</h2>
+
+      <!-- Bloque 1: Pie AP o Dorsoplantar -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pie-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_pie_ap.jpg" alt="Pie AP o Dorsoplantar">
+        </div>
+        <div class="card-contenido">
+          <h2>Pie AP o Dorsoplantar</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Pie AP Oblicuo -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pie-oblicuo')">
+        <div class="card-imagen">
+          <img src="../img/rx_pie_oblicuo.jpg" alt="Pie AP Oblicuo">
+        </div>
+        <div class="card-contenido">
+          <h2>Pie AP Oblicuo</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Pie Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pie-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_pie_lat.jpg" alt="Pie Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Pie Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Pies AP y Lateral con Carga -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pie-carga')">
+        <div class="card-imagen">
+          <img src="../img/rx_pie_carga.jpg" alt="Pies AP y Lateral con Carga">
+        </div>
+        <div class="card-contenido">
+          <h2>Pies AP y Lateral con Carga</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: 1er Ortejo (AP, Lateral y Oblicuo) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-primer-ortejo')">
+        <div class="card-imagen">
+          <img src="../img/rx_primer_ortejo.jpg" alt="1er Ortejo AP Lateral y Oblicuo">
+        </div>
+        <div class="card-contenido">
+          <h2>1er Ortejo (AP, Lateral y Oblicuo)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Ortejos del 2° al 5° -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-ortejos')">
+        <div class="card-imagen">
+          <img src="../img/rx_ortejos.jpg" alt="Ortejos del 2° al 5°">
+        </div>
+        <div class="card-contenido">
+          <h2>Ortejos del 2° al 5° (AP, Lateral y Oblicuo)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7: Calcáneo Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-calcaneo-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_calcaneo_lat.jpg" alt="Calcáneo Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Calcáneo Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8: Calcáneo Axial -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-calcaneo-axial')">
+        <div class="card-imagen">
+          <img src="../img/rx_calcaneo_axial.jpg" alt="Calcáneo Axial">
+        </div>
+        <div class="card-contenido">
+          <h2>Calcáneo Axial</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 9: Tobillo AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tobillo-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_tobillo_ap.jpg" alt="Tobillo AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Tobillo AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 10: Tobillo Oblicuo Interno (Mortaja) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tobillo-mortaja')">
+        <div class="card-imagen">
+          <img src="../img/rx_tobillo_mortaja.jpg" alt="Tobillo Oblicuo Interno Mortaja">
+        </div>
+        <div class="card-contenido">
+          <h2>Tobillo Oblicuo Interno</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 11: Tobillo Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tobillo-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_tobillo_lat.jpg" alt="Tobillo Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Tobillo Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 12: Tobillo Oblicuo Externo 45° -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tobillo-oblicuo-ext')">
+        <div class="card-imagen">
+          <img src="../img/rx_tobillo_oblicuo_ext.jpg" alt="Tobillo Oblicuo Externo 45°">
+        </div>
+        <div class="card-contenido">
+          <h2>Tobillo Oblicuo Externo</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 13: Pierna AP y Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pierna-ap-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_pierna_ap_lat.jpg" alt="Pierna AP y Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Pierna</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 14: Pierna Oblicuas (Interna y Externa) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pierna-oblicuas')">
+        <div class="card-imagen">
+          <img src="../img/rx_pierna_oblicuas.jpg" alt="Pierna Oblicuas Interna y Externa">
+        </div>
+        <div class="card-contenido">
+          <h2>Pierna Oblicuas</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 15: Rótula PA y Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rotula')">
+        <div class="card-imagen">
+          <img src="../img/rx_rotula.jpg" alt="Rótula PA y Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Rótula</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 16: Axial de Rótula o Merchant -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rotula-merchant')">
+        <div class="card-imagen">
+          <img src="../img/rx_rotula_merchant.jpg" alt="Axial de Rótula o Merchant">
+        </div>
+        <div class="card-contenido">
+          <h2>Axial de Rótula (Método de Merchant)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 17: Rodilla AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rodilla-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_rodilla_ap.jpg" alt="Rodilla AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Rodilla AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 18: Rodilla Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rodilla-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_rodilla_lat.jpg" alt="Rodilla Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Rodilla Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 19: Rodilla Oblicuas (Externa e Interna) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rodilla-oblicuas')">
+        <div class="card-imagen">
+          <img src="../img/rx_rodilla_oblicuas.jpg" alt="Rodilla Oblicuas Externa e Interna">
+        </div>
+        <div class="card-contenido">
+          <h2>Rodilla Oblicua</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 20: Rodilla AP con Carga -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rodilla-carga')">
+        <div class="card-imagen">
+          <img src="../img/rx_rodilla_carga.jpg" alt="Rodilla AP con Carga">
+        </div>
+        <div class="card-contenido">
+          <h2>Rodilla AP con Carga</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 21: Fémur AP (Proximal y Distal) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-femur-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_femur_ap.jpg" alt="Fémur AP Proximal y Distal">
+        </div>
+        <div class="card-contenido">
+          <h2>Fémur AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 22: Fémur Lateral Proximal -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-femur-lat-prox')">
+        <div class="card-imagen">
+          <img src="../img/rx_femur_lat_prox.jpg" alt="Fémur Lateral Proximal">
+        </div>
+        <div class="card-contenido">
+          <h2>Fémur Lateral Proximal</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 23: Fémur Lateral Distal -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-femur-lat-dist')">
+        <div class="card-imagen">
+          <img src="../img/rx_femur_lat_prox.jpg" alt="Fémur Lateral Distal">
+        </div>
+        <div class="card-contenido">
+          <h2>Fémur Lateral Distal</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Pie AP o Dorsoplantar -->
+    <div id="detalle-pie-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pie_ap.jpg" alt="Posicionamiento Pie AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pie_ap.jpg" alt="Radiografía Pie AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pie AP o Dorsoplantar</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines gruesos, tobilleras metálicas, anillos de ortejos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pie y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en 10° hacia craneal (perpendicular a los metatarsianos para abrir espacios intertarsianos).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal del pie; por el lado la base del 3° metatarsiano.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado (sedestación) o en decúbito dorsal sobre la mesa de rayos, flexionando la rodilla para apoyar toda la planta del pie plana sobre el chasis.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>50 - 55 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Pie AP Oblicuo -->
+    <div id="detalle-pie-oblicuo" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pie_oblicuo.jpg" alt="Posicionamiento Pie AP Oblicuo">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pie_oblicuo.jpg" alt="Radiografía Pie AP Oblicuo">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pie AP Oblicuo</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pie y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Longitudinal) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en 10° hacia craneal (o 0° perpendicular según técnica).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal del pie; por el lado la base del 3° metatarsiano.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado (sedestación) o en decúbito dorsal sobre la mesa apoyando la planta del pie sobre el chasis; desde esta posición, rotar medialmente el pie elevando unos 30° a 45° el borde externo (lateral) del pie apoyado con una cuña radiolúcida.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>50 - 55 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante la exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Pie Lateral -->
+    <div id="detalle-pie-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pie_lat.jpg" alt="Posicionamiento Pie Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pie_lat.jpg" alt="Radiografía Pie Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pie Lateral (Mediolateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pie y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Transversal) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado en la base de los metatarsianos (base del 1° metatarsiano / cuneiforme medial).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito lateral sobre la mesa de rayos, apoyando todo el pie lateralmente sobre el chasis (lado o borde externo) con dorsiflexión neutra del tobillo (90°).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Pies AP y Lateral con Carga -->
+    <div id="detalle-pie-carga" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pie_carga.jpg" alt="Posicionamiento Pie con Carga">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pie_carga.jpg" alt="Radiografía Pie con Carga">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pies AP y Lateral con Carga (Con Apoyo)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir ambos pies y tobillos.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm o 30 x 40 cm (Longitudinal). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>• <strong>AP con carga:</strong> Angulado en 10° a 15° hacia craneal.<br>• <strong>Lateral con carga:</strong> 0° Horizontal perpendicular al chasis.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>• <strong>AP:</strong> Punto medio entre ambos pies a nivel de la base del 3° metatarsiano.<br>• <strong>Lateral:</strong> Base del 1° metatarsiano / articulación tarsometatarsiana.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>• <strong>AP con Carga:</strong> Paciente en bipedestación sobre la plataforma/mesa o en el suelo, apoyando ambos pies en su totalidad sobre el chasis con el peso distribuido equitativamente.<br>• <strong>Lateral con Carga:</strong> Paciente en bipedestación apoyando ambos pies en su totalidad sobre el aditamento de madera/acrílico, separados verticalmente por el chasis en medio de ambos pies.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>52 - 58 kV (AP) / 58 - 65 kV (Lateral)</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs (AP) / 5 - 8 mAs (Lateral)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo (evalúa pie plano, pie cavo, hallux valgus y arcos plantares bajo peso fisiológico).<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha 1er Ortejo -->
+    <div id="detalle-primer-ortejo" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_primer_ortejo.jpg" alt="Posicionamiento 1er Ortejo">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_primer_ortejo.jpg" alt="Radiografía 1er Ortejo">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>1er Ortejo (AP, Lateral y Oblicuo)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, anillos de ortejos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pie.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal dividido). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI; en AP puede angularse 10°-15° craneal si no se usa cuña).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal del 1° ortejo y por el lado la articulación metatarsofalángica (MTF) del 1° ortejo.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal o sentado sobre la mesa de rayos:<br>• <strong>AP:</strong> Planta del pie apoyada plana sobre el chasis (o sobre cuña de 15°).<br>• <strong>Lateral:</strong> Rotar el pie medialmente apoyando el borde interno del 1er ortejo sobre el chasis y separando los demás ortejos con gasa/banda.<br>• <strong>Oblicuo:</strong> Rotar medialmente el pie entre 30° y 45°.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>45 - 50 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>2 - 3.5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante la exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Ortejos del 2° al 5° -->
+    <div id="detalle-ortejos" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_ortejos.jpg" alt="Posicionamiento Ortejos 2 al 5">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_ortejos.jpg" alt="Radiografía Ortejos 2 al 5">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Ortejos del 2° al 5° (AP, Lateral y Oblicuo)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, anillos de ortejos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pie.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Transversal dividido). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Perpendicular (o 10°-15° craneal en AP para abrir articulaciones interfalángicas).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado sobre el ortejo de interés, a nivel de la articulación metatarsofalángica (MTF).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado o en decúbito dorsal sobre la mesa:<br>• <strong>AP:</strong> Planta del pie apoyada plana sobre el receptor.<br>• <strong>Oblicuo:</strong> Rotación medial o lateral de 30° a 45° separando ortejos.<br>• <strong>Lateral:</strong> Ortejo apoyado lateralmente sobre el chasis separando los dedos adyacentes con cinta o gasa.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>44 - 48 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>2 - 3 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.7 Ficha Calcáneo Lateral -->
+    <div id="detalle-calcaneo-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_calcaneo_lat.jpg" alt="Posicionamiento Calcáneo Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_calcaneo_lat.jpg" alt="Radiografía Calcáneo Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Calcáneo Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir tobillo y talón.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado directamente en el centro del hueso calcáneo (2,5 cm inferior al maléolo medial).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito lateral sobre la mesa de rayos, apoyando el lado externo del talón sobre el chasis (tobillo en dorsiflexión de 90°).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo (evalúa espolón calcáneo, fracturas de calcáneo y ángulo de Böhler).<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.8 Ficha Calcáneo Axial -->
+    <div id="detalle-calcaneo-axial" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_calcaneo_axial.jpg" alt="Posicionamiento Calcáneo Axial">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_calcaneo_axial.jpg" alt="Radiografía Calcáneo Axial">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Calcáneo Axial (Plantodorsal)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pierna distal, tobillo y pie.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal o Longitudinal). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en 45° hacia craneal (o 40° craneal según grado de dorsiflexión).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado hacia el hueso calcáneo, entrando por la cara plantar a nivel de la base del 3° metatarsiano.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado (sedestación) o en decúbito dorsal con la pierna completamente estirada, apoyando el talón en el centro del chasis. El paciente debe hiperflexionar dorsalmente el pie ayudado de una banda que sostiene con sus manos haciendo tracción para mantener la planta perpendicular a la mesa.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>62 - 70 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>6 - 10 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Mantener tracción firme de la banda sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.9 Ficha Tobillo AP -->
+    <div id="detalle-tobillo-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tobillo_ap.jpg" alt="Posicionamiento Tobillo AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_tobillo_ap.jpg" alt="Radiografía Tobillo AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tobillo AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pierna distal y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm dividido. Folio regular (foco fino/grueso).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>RC perpendicular en el punto medio entre ambos maléolos (articulación tibioastragalina).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal o sentado sobre la mesa con la pierna estirada. Realizar una rotación medial de 5° de la pierna y el pie (eje longitudinal del pie perpendicular al receptor).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.10 Ficha Tobillo Oblicuo Interno (Mortaja) -->
+    <div id="detalle-tobillo-mortaja" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tobillo_mortaja.jpg" alt="Posicionamiento Tobillo Mortaja">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_tobillo_mortaja.jpg" alt="Radiografía Tobillo Mortaja">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tobillo Oblicuo Interno</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pierna distal y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm dividido. Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>RC perpendicular en el punto medio entre ambos maléolos.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal con la pierna estirada. Realizar una rotación medial (interna) de 15° a 20° de toda la pierna y el pie hasta que la línea intermaleolar quede paralela al chasis (despeja completamente la mortaja tibioperoneoastragalina sin superposición).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante la exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.11 Ficha Tobillo Lateral -->
+    <div id="detalle-tobillo-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tobillo_lat.jpg" alt="Posicionamiento Tobillo Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_tobillo_lat.jpg" alt="Radiografía Tobillo Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tobillo Lateral (Mediolateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pierna distal y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm dividido. Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>RC perpendicular sobre el maléolo medial (articulación del tobillo).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito lateral sobre el lado afectado, apoyando la cara externa del tobillo y pie sobre el chasis (dorsiflexión de 90°). La pierna contraria pasa por encima, colocando un soporte (almohadilla/cuña) bajo ella para mayor estabilidad.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.12 Ficha Tobillo Oblicuo Externo 45° -->
+    <div id="detalle-tobillo-oblicuo-ext" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tobillo_oblicuo_ext.jpg" alt="Posicionamiento Tobillo Oblicuo Externo">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_tobillo_oblicuo_ext.jpg" alt="Radiografía Tobillo Oblicuo Externo">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tobillo Oblicuo Externo</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pierna distal y tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm dividido. Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>RC perpendicular en el punto medio entre ambos maléolos.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal con la pierna estirada. Realizar una rotación lateral (externa) de 45° de toda la pierna y el pie (evalúa maléolo medial y tubérculo anterior de la tibia).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante la exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.13 Ficha Pierna AP y Lateral -->
+    <div id="detalle-pierna-ap-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pierna_ap_lat.jpg" alt="Posicionamiento Pierna AP y Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pierna_ap_lat.jpg" alt="Radiografía Pierna AP y Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pierna (AP y Lateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, tobilleras o férulas metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir completamente desde rodilla hasta tobillo (usar bata o short).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal, debe incluir ambas articulaciones: rodilla y tobillo). Folio regular (foco grueso).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al punto medio de la pierna).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>En el punto medio de la diáfisis de la pierna (tibia y peroné), asegurando incluir rodilla y tobillo.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>• <strong>Pierna AP:</strong> Paciente en decúbito supino sobre la mesa, pierna estirada y posicionada con rótula al cénit (pie en dorsiflexión de 90°).<br>• <strong>Pierna Lateral:</strong> Paciente en decúbito lateral sobre el lado afectado con flexión de pierna/rodilla en 45°. La pierna contraria pasa por encima apoyada sobre un soporte para estabilidad.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>60 - 68 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>5 - 8 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante cada disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.14 Ficha Pierna Oblicuas -->
+    <div id="detalle-pierna-oblicuas" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pierna_oblicuas.jpg" alt="Posicionamiento Pierna Oblicuas">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pierna_oblicuas.jpg" alt="Radiografía Pierna Oblicuas">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pierna Oblicuas (Interna y Externa)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Calzado, calcetines, objetos metálicos en la pierna.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Descubrir pierna desde rodilla hasta tobillo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal). Folio regular (foco grueso).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al punto medio de la pierna).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>En el punto medio de la pierna.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito supino sobre la mesa:<br>• <strong>Pierna Oblicua Interna:</strong> Elevación de la cadera del lado afectado y rotación interna (medial) en 45° de toda la extremidad inferior (despeja espacio interóseo tibioperoneo).<br>• <strong>Pierna Oblicua Externa:</strong> Elevación de la cadera contraria y rotación externa (lateral) en 45° de toda la extremidad inferior.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>60 - 68 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>5 - 8 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante cada exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.15 Ficha Rótula PA y Lateral -->
+    <div id="detalle-rotula" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_rotula.jpg" alt="Posicionamiento Rótula PA y Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_rotula.jpg" alt="Radiografía Rótula PA y Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Rótula (PA y Lateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Rodilleras con varillas metálicas, cierres/botones de pantalón.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen o short.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal). Folio regular (foco fino).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky (Bucky mesa).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>• <strong>Rótula PA:</strong> En el punto medio del hueco poplíteo (centro de la rótula).<br>• <strong>Rótula Lateral:</strong> Al centro de la articulación femoropatelar.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>• <strong>Rótula PA:</strong> Paciente en decúbito prono (ventral) con la pierna en extensión apoyando la punta de los pies en la mesa; posicionar la extremidad afectada de modo que la rótula quede paralela a la placa.<br>• <strong>Rótula Lateral:</strong> Paciente en decúbito lateral sobre el lado afectado con flexión de pierna de solo 5° a 10° (o hasta 45° sin tracción muscular); la pierna contraria pasa por encima sobre un soporte.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 72 kV (PA) / 60 - 68 kV (Lateral)</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>10 - 16 mAs (PA) / 8 - 12 mAs (Lateral)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante cada disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.16 Ficha Axial de Rótula o Merchant -->
+    <div id="detalle-rotula-merchant" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_rotula_merchant.jpg" alt="Posicionamiento Axial de Rótula Merchant">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_rotula_merchant.jpg" alt="Radiografía Axial de Rótula Merchant">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Axial de Rótula (Método de Merchant / Tangencial)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Rodilleras, cierres o broches metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen o short.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Transversal). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Perpendicular al chasis (tangencial al surco intercondíleo y espacio femoropatelar, con tubo angulado 30° caudal desde la horizontal en dispositivo de Merchant o tangencial inferosuperior en sedestación).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado a nivel del vértice rotuliano / espacio articular femoropatelar.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>• <strong>Método de Merchant:</strong> Paciente en decúbito supino al borde de la mesa con las rodillas flexionadas en 40° a 45° apoyadas sobre el soporte de piernas; el chasis se ubica perpendicular a las tibias distalmente.<br>• <strong>Variante Inferosuperior (Settegast/Hughston):</strong> Paciente sentado o en decúbito dorsal con rodilla flectada sosteniendo el chasis sobre el muslo distal.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>58 - 65 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>5 - 8 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Mantener los cuádriceps relajados y sin moverse durante el disparo (evalúa subluxación rotuliana y condromalacia).<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.17 Ficha Rodilla AP -->
+    <div id="detalle-rodilla-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_rodilla_ap.jpg" alt="Posicionamiento Rodilla AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_rodilla_ap.jpg" alt="Radiografía Rodilla AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Rodilla AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Rodilleras, cierres/botones de pantalón.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen o short.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI; puede angularse 5° cefálico en pacientes altos o 5° caudal en pacientes bajos).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal de la rodilla; por el lado el vértice rotuliano (1,2 cm distal al ápex de la rótula).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal con la rodilla a estudiar en el centro de la mesa; desde esta posición rotar la pierna hacia interno unos 15° (o 3° a 5° medial hasta centrar la rótula) para que la rótula adquiera una posición medial central y mejorar la visión de la cabeza peroneal. Brazos a los lados del cuerpo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 72 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>10 - 15 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante la exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.18 Ficha Rodilla Lateral -->
+    <div id="detalle-rodilla-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_rodilla_lat.jpg" alt="Posicionamiento Rodilla Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_rodilla_lat.jpg" alt="Radiografía Rodilla Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Rodilla Lateral (Mediolateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Rodilleras, cierres/botones metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen o short.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado de 5° a 10° hacia craneal (compensa la mayor longitud del cóndilo femoral medial y superpone ambos cóndilos).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal de la rodilla; por el lado sobre el cóndilo femoral medial.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito lateral estricto, apoyando el borde externo de la rodilla de interés en el centro de la mesa, cóndilos superpuestos, con una semiflexión de la pierna de 20° a 30°. La pierna contraria pasa por encima, colocando un soporte bajo ella para su estabilidad.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 72 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>10 - 15 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.19 Ficha Rodilla Oblicuas -->
+    <div id="detalle-rodilla-oblicuas" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_rodilla_oblicuas.jpg" alt="Posicionamiento Rodilla Oblicuas">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_rodilla_oblicuas.jpg" alt="Radiografía Rodilla Oblicuas">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Rodilla Oblicuas (Externa e Interna a 45°)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Rodilleras, cierres/botones metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen o short.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal de la rodilla; por el lado el vértice rotuliano.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal con la rodilla extendida; desde esta posición realizar una rotación de 45° a externo (despeja cóndilo medial y platillo tibial medial) y luego una rotación de 45° a interno (despeja articulación tibioperonea proximal, cabeza del peroné y cóndilo lateral), cuidando la simetría de la estructura.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 72 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>10 - 15 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante cada exposición.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.20 Ficha Rodilla AP con Carga -->
+    <div id="detalle-rodilla-carga" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_rodilla_carga.jpg" alt="Posicionamiento Rodilla AP con Carga">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_rodilla_carga.jpg" alt="Radiografía Rodilla AP con Carga">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Rodilla AP con Carga (Bipodal / Monopodal - Ejes Valgo y Varo)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Rodilleras, cierres/botones metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen o short (pantalones remangados).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 40 cm o 35 x 43 cm (Transversal para estudio bilateral comparativo). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal perpendicular al estativo mural.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>En el punto medio entre ambas rodillas a nivel de los vértices rotulianos / interlínea articular femorotibial.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en bipedestación de espaldas al estativo mural, rodillas extendidas y rótulas centradas al frente, con apoyo bipodal (peso distribuido en ambos pies) o apoyo monopodal según orden médica.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>68 - 75 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>12 - 18 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Mantenerse firme sin moverse durante el disparo (evalúa pinzamiento del espacio articular femorotibial, dismetría de EEII y desviaciones de eje en Genu Valgo o Genu Varo).<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.21 Ficha Fémur AP (Proximal y Distal) -->
+    <div id="detalle-femur-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_femur_ap.jpg" alt="Posicionamiento Fémur AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_femur_ap.jpg" alt="Radiografía Fémur AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Fémur AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cinturón, monedas, llaves, cierres/botones de pantalón.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Retirar pantalón y ropa con broches metálicos (usar bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal; en adultos se toma en dos placas: proximal y distal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky (Bucky mesa).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al eje longitudinal del fémur).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal del fémur:<br>• <strong>Fémur Proximal:</strong> La articulación coxofemoral debe quedar a dos traveses de dedo bajo el borde superior del chasis.<br>• <strong>Fémur Distal:</strong> La articulación femorotibial debe quedar a dos traveses de dedo sobre el borde inferior del chasis.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito dorsal con el muslo centrado en la línea media de la mesa, pierna a estudiar con una rotación a medial de 15° (para colocar cuello femoral paralelo al RI en proximal y epicóndilos paralelos en distal), brazos a los lados del cuerpo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 82 kV (Proximal) / 70 - 78 kV (Distal)</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>20 - 30 mAs (Proximal) / 15 - 22 mAs (Distal)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante cada disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.22 Ficha Fémur Lateral Proximal -->
+    <div id="detalle-femur-lat-prox" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_femur_lat_prox.jpg" alt="Posicionamiento Fémur Lateral Proximal">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_femur_lat_prox.jpg" alt="Radiografía Fémur Lateral Proximal">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Fémur Lateral Proximal</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cinturón, monedas, llaves, cierres/botones metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal del fémur; por el lado la articulación coxofemoral (ingle) debe quedar a dos traveses de dedo bajo el borde superior del chasis.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito lateral, apoyando el borde externo del muslo en el centro de la mesa; desde esta posición el cuerpo del paciente se oblicua en 45° hacia atrás (abduciendo/flexionando el muslo sano hacia posterior para evitar superposición con el tercio proximal del fémur afectado). Usar almohada para apoyar la cabeza y brazos acomodados en torno a ella.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>22 - 35 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.23 Ficha Fémur Lateral Distal -->
+    <div id="detalle-femur-lat-dist" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Inferior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_femur_lat_prox.jpg" alt="Posicionamiento Fémur Lateral Distal">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_femur_lat_prox.jpg" alt="Radiografía Fémur Lateral Distal">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Fémur Lateral Distal</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cierres, broches o rodilleras metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Con Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje longitudinal del fémur; por el lado la articulación femorotibial debe quedar a dos traveses de dedo por sobre el borde inferior del chasis.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en decúbito lateral, apoyando el borde externo del muslo en el centro de la mesa; pierna contraria estirada levemente hacia atrás (o pasada por delante), colocando un soporte (almohadillas) bajo la rodilla que la deje estable y a nivel que permita mantener la lateralidad estricta del cuerpo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 78 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>15 - 22 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse durante el disparo.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('piernas-pies-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('piernas-pies-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Bioseguridad y Radioprotección</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html" class="active">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Índice de Módulos de Bioseguridad y Radioprotección -->
+    <div id="bioseguridad-indice">
+      
+      <h2 class="titulo-seccion">Bioseguridad y Radioprotección</h2>
+
+      <!-- Bloque 1: Conceptos Generales de Bioseguridad y Radioprotección -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-conceptos-generales')">
+        <div class="card-imagen">
+          <img src="../img/bio_conceptos_generales.jpg" alt="Conceptos Generales de Bioseguridad y Radioprotección">
+        </div>
+        <div class="card-contenido">
+          <h2>Conceptos Generales de Bioseguridad y Radioprotección</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Qué es EPP, Uso Correcto, Postura y Retiro -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-uso-retiro-epp')">
+        <div class="card-imagen">
+          <img src="../img/bio_uso_retiro_epp.jpg" alt="Uso y Retiro de EPP">
+        </div>
+        <div class="card-contenido">
+          <h2>Elementos de Protección Personal (EPP): Definición, Postura y Retiro</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Principios ICRP y Criterio ALARA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-principios-alara')">
+        <div class="card-imagen">
+          <img src="../img/bio_alara.jpg" alt="Principios de Protección Radiológica y ALARA">
+        </div>
+        <div class="card-contenido">
+          <h2>Principios de Protección Radiológica y Criterio ALARA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Factores Físicos de Radioprotección -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-factores-fisicos')">
+        <div class="card-imagen">
+          <img src="../img/bio_factores_fisicos.jpg" alt="Tiempo Distancia y Blindaje">
+        </div>
+        <div class="card-contenido">
+          <h2>Factores Físicos: Tiempo, Distancia y Blindaje</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: Normativa Chilena D.S. N° 3 y D.S. N° 133 -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-normativa-chile')">
+        <div class="card-imagen">
+          <img src="../img/bio_normativa.jpg" alt="Normativa Chilena DS 3 y DS 133">
+        </div>
+        <div class="card-contenido">
+          <h2>Normativa Chilena Vigente</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Dosimetría Personal y Elementos Plomados -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-dosimetria-epp')">
+        <div class="card-imagen">
+          <img src="../img/bio_dosimetria_epp.jpg" alt="Dosimetría y Elementos de Protección Plomada">
+        </div>
+        <div class="card-contenido">
+          <h2>Dosimetría Personal y Elementos de Protección Plomada</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7: Protección en Embarazo y Pediatría -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pacientes-especiales')">
+        <div class="card-imagen">
+          <img src="../img/bio_embarazo_pediatria.jpg" alt="Radioprotección en Embarazo y Pediatría">
+        </div>
+        <div class="card-contenido">
+          <h2>Radioprotección en Pacientes Especiales</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8: Bioseguridad Hospitalaria, IAAS y Manejo de REAS -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-bioseguridad-reas')">
+        <div class="card-imagen">
+          <img src="../img/bio_iaas_reas.jpg" alt="Bioseguridad Hospitalaria IAAS y REAS">
+        </div>
+        <div class="card-contenido">
+          <h2>Bioseguridad Hospitalaria, IAAS y Manejo de REAS</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Conceptos Generales de Bioseguridad y Radioprotección -->
+    <div id="detalle-conceptos-generales" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_concepto_bioseguridad.jpg" alt="Concepto de Bioseguridad Hospitalaria">
+            <span class="img-tag">Bioseguridad Clínica</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_concepto_radioproteccion.jpg" alt="Concepto de Radioprotección">
+            <span class="img-tag">Protección Radiológica</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Conceptos Generales de Bioseguridad y Radioprotección</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿Qué es Bioseguridad?:</strong>
+            <p>Es el conjunto de normas, hábitos y barreras preventivas que aplicamos a diario para cuidarnos a nosotros mismos, a los pacientes y al entorno frente a riesgos biológicos (virus, bacterias, hongos), químicos (medios de contraste, desinfectantes) y físicos dentro del hospital.</p>
+          </div>
+          <div class="info-item">
+            <strong>Pilares Fundamentales de Bioseguridad:</strong>
+            <p>• Universalidad: Asumir que todo paciente y todo fluido corporal (sangre, saliva, secreciones, orina) es potencialmente infeccioso, sin importar su diagnóstico.<br>• Uso de Barreras: Interponer barreras físicas (EPP, biombos) y químicas (antisépticos, desinfectantes) para evitar el contacto directo con microorganismos o sustancias de riesgo.<br>• Eliminación Segura de Residuos: Segregar y descartar correctamente cada material contaminado o cortopunzante según la normativa vigente (REAS).</p>
+          </div>
+          <div class="info-item">
+            <strong>¿Qué es Radioprotección?:</strong>
+            <p>Es la disciplina dedicada a proteger a las personas (pacientes, trabajadores expuestos y público) y al ambiente frente a los efectos nocivos de las radiaciones ionizantes, permitiendo aprovechar sus beneficios diagnósticos de manera segura.</p>
+          </div>
+          <div class="info-item">
+            <strong>Conceptos Esenciales en Radiaciones y Dosimetría:</strong>
+            <p>• Radiación Ionizante vs. No Ionizante: La ionizante tiene energía suficiente para arrancar electrones de los átomos y generar daño biológico (Rayos X en Radiografía y Escáner; Rayos Gamma en Medicina Nuclear). La no ionizante no ioniza la materia (Ultrasonido en Ecografía; Campos Magnéticos y Radiofrecuencia en Resonancia Magnética).<br>• Dosis Absorbida (Gray - Gy): Energía que deposita la radiación por unidad de masa de tejido.<br>• Dosis Equivalente (Sievert - Sv): Ponderación biológica de la dosis absorbida según el tipo de radiación (en Rayos X y Gamma el factor de ponderación es 1, por lo que 1 Gy = 1 Sv).<br>• Dosis Efectiva (Sievert - Sv): Suma ponderada de las dosis equivalentes en todos los órganos irradiados de acuerdo con la radiosensibilidad de cada tejido.<br>• Efectos Deterministas vs. Estocásticos: Los deterministas (reacciones tisulares como eritema o cataratas) aparecen al superar un umbral de dosis y su gravedad aumenta con la dosis; los estocásticos (cáncer radioinducido y efectos hereditarios) no tienen umbral y su probabilidad aumenta con la dosis.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Idea Clave en Imagenología:</strong>
+            <p>- En cualquier servicio de Imagenología ambos conceptos van de la mano: aplicas bioseguridad en todas las salas por igual (Rx, Escáner, Eco y Resonancia) y sumas la radioprotección cada vez que trabajas con equipos emisores de radiación ionizante.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Qué es EPP, Uso Correcto, Postura y Retiro -->
+    <div id="detalle-uso-retiro-epp" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_postura_epp.jpg" alt="Secuencia de Postura de EPP">
+            <span class="img-tag">Postura de EPP</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_retiro_epp.jpg" alt="Secuencia de Retiro de EPP">
+            <span class="img-tag">Retiro Seguro de EPP</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Elementos de Protección Personal (EPP): Definición, Postura y Retiro</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>¿Qué es un EPP?:</strong>
+            <p>Un Elemento de Protección Personal (EPP) es cualquier prenda, accesorio o equipo diseñado para proteger al trabajador frente a riesgos específicos en su jornada clínica. En Imagenología trabajamos con EPP Clínicos/Biológicos (que actúan como barrera ante microorganismos y fluidos) y EPP Radiológicos (blindajes plomados contra radiación dispersa).</p>
+          </div>
+          <div class="info-item">
+            <strong>EPP Clínicos Habituales en Imagenología:</strong>
+            <p>• Guantes de procedimiento o estériles: Protegen las manos ante contacto con sangre, fluidos, mucosas, piel no intacta o superficies contaminadas (por ejemplo, al canalizar vías venosas o realizar Rx portátiles).<br>• Mascarilla quirúrgica o respirador N95 / KN95: Protege nariz y boca frente a gotitas respiratorias (quirúrgica) o aerosoles en aislamiento aéreo como tuberculosis o COVID-19 (N95/KN95).<br>• Antiparras o escudo facial: Evitan el contacto de salpicaduras con la mucosa ocular.<br>• Pechera plástica o bata impermeable: Protege el uniforme clínico frente a salpicaduras o contacto estrecho con pacientes en aislamiento.</p>
+          </div>
+          <div class="info-item">
+            <strong>Secuencia Ordenada de Postura (Colocación):</strong>
+            <p>Se realiza antes de entrar en contacto con el paciente o ingresar a la habitación/sala de aislamiento:<br>1. Higienizar las manos (agua y jabón o alcohol gel) y retirar joyas, reloj y celular.<br>2. Colocar la bata o pechera impermeable cubriendo bien el torso y amarrándola en la espalda.<br>3. Colocar la mascarilla quirúrgica o respirador N95/KN95 ajustando el clip nasal y comprobando un buen sello facial.<br>4. Colocar las antiparras o escudo facial.<br>5. Calzar los guantes de procedimiento cubriendo el borde de los puños de la bata.</p>
+          </div>
+          <div class="info-item">
+            <strong>Secuencia Ordenada de Retiro (Clave para No Autocontaminarse):</strong>
+            <p>Retirarse los EPP con apuro es la principal causa de contaminación accidental. Sigue siempre el orden desde lo más sucio hacia lo más limpio, sin tocar la cara externa:<br>1. Retirar los guantes: Pellizca el borde externo de un guante con la mano contraria, sácalo dándolo vuelta (de adentro hacia afuera) y sostenlo con la mano enguantada; luego desliza tus dedos limpios por debajo del puño del segundo guante, retíralo envolviendo el primero y descártalo en bolsa amarilla (REAS).<br>2. Higienizar las manos con alcohol gel.<br>3. Retirar la bata o pechera: Desamarra los lazos (o rómpela suavemente si es desechable), deslízala desde los hombros hacia adelante enrollando la cara externa hacia adentro y deséchala.<br>4. Higienizar nuevamente las manos.<br>5. Retirar antiparras o escudo facial: Tómalos siempre desde las patillas o la banda elástica trasera, nunca desde el frente.<br>6. Retirar la mascarilla o respirador N95: Sujétala desde los elásticos traseros (sin tocar la parte frontal filtrante), inclina levemente la cabeza hacia adelante y deséchala.<br>7. Realizar lavado clínico final de manos con agua y jabón (40 a 60 segundos).</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Consejos Prácticos en Sala:</strong>
+            <p>- Nunca salgas del box o sala de aislamiento con los mismos guantes o pechera para tocar manillas, teclados de consola o teléfonos.<br>- Si debes usar delantal plomado junto con EPP clínicos (por ejemplo, en un examen portátil en aislamiento), el delantal plomado va siempre por debajo de la bata desechable para evitar contaminar el plomo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Principios ICRP y ALARA -->
+    <div id="detalle-principios-alara" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_icrp_esquema.jpg" alt="Tres Principios ICRP">
+            <span class="img-tag">Sistema ICRP</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_alara_esquema.jpg" alt="Criterio ALARA en Imagenología">
+            <span class="img-tag">Optimización ALARA</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Principios de Protección Radiológica y Criterio ALARA</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Objetivo de la Radioprotección:</strong>
+            <p>Evitar que aparezcan efectos deterministas manteniendo las dosis bajo sus umbrales, y reducir al mínimo razonable la probabilidad de efectos estocásticos a largo plazo.</p>
+          </div>
+          <div class="info-item">
+            <strong>1. Principio de Justificación:</strong>
+            <p>Ninguna exposición a radiaciones ionizantes debe realizarse si no aporta un beneficio clínico real para el paciente que supere el riesgo radiológico. Por eso todo estudio requiere una orden médica debidamente justificada.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Principio de Optimización (Criterio ALARA):</strong>
+            <p>Sigla de <em>"As Low As Reasonably Achievable"</em> (Tan bajo como sea razonablemente alcanzable). En la práctica clínica significa lograr una imagen con calidad diagnóstica usando la menor dosis posible mediante colimación estricta, selección adecuada de kVp/mAs, filtración y evitando repeticiones innecesarias.</p>
+          </div>
+          <div class="info-item">
+            <strong>3. Principio de Limitación de Dosis:</strong>
+            <p>La exposición individual de los trabajadores (POE) y del público nunca debe superar los límites máximos fijados por la legislación nacional. Importante: Estos límites no aplican a la exposición médica de pacientes, donde rigen la justificación clínica y los niveles de referencia diagnóstica.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Rol en Sala del TSRR:</strong>
+            <p>- Confirmar la identidad del paciente y que el estudio solicitado coincida con su clínica antes de irradiar.<br>- Colimar estrictamente al área anatómica de interés.<br>- Utilizar protectores gonadales o tiroideos siempre que no interfieran con la estructura a evaluar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Factores Físicos -->
+    <div id="detalle-factores-fisicos" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_ley_inverso.jpg" alt="Ley del Inverso del Cuadrado">
+            <span class="img-tag">Ley del Inverso del Cuadrado</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_blindaje_sala.jpg" alt="Blindaje Estructural Sala Rayos X">
+            <span class="img-tag">Blindaje y Barreras</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Factores Físicos: Tiempo, Distancia y Blindaje</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>1. Tiempo de Exposición (Dosis ∝ Tiempo):</strong>
+            <p>A mayor tiempo frente a una fuente emisora, mayor es la dosis acumulada. Por eso utilizamos tiempos de disparo cortos en radiografía y controlamos estrictamente los pulsos de emisión en fluoroscopia o arco en C.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Distancia (Ley del Inverso del Cuadrado):</strong>
+            <p>Es la herramienta más rápida y efectiva en la rutina diaria. La intensidad de la radiación disminuye inversamente con el cuadrado de la distancia respecto a la fuente ($I_1 / I_2 = d_2^2 / d_1^2$). Ejemplo práctico: Si duplicas tu distancia desde la fuente (de 1 m a 2 m), la tasa de dosis cae a la cuarta parte (25%). En equipos portátiles, aléjate al menos 2 metros o ubícate detrás de un biombo plomado.</p>
+          </div>
+          <div class="info-item">
+            <strong>3. Blindaje (Atenuación Exponencial):</strong>
+            <p>Consiste en interponer materiales de alto número atómico (Z) y alta densidad entre el haz y las personas:<br>• Blindaje Estructural: Muros revestidos con láminas de plomo (habitualmente 1,5 a 2 mm Pb en Rx convencional; hormigón baritado en TC), puertas plomadas y vidrio plomado en la cabina de comando.<br>• Barreras Primarias vs. Secundarias: Las primarias detienen el haz útil directo; las secundarias atenúan la radiación dispersa y de fuga.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Regla de Oro en Sala:</strong>
+            <p>- Nunca orientes el haz primario hacia la cabina de control ni hacia ventanas o puertas sin blindaje.<br>- Asegúrate siempre de cerrar por completo la puerta plomada de la sala antes de presionar el disparador.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha Normativa Chilena -->
+    <div id="detalle-normativa-chile" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_ds3_tabla.jpg" alt="Límites de Dosis DS 3 Chile">
+            <span class="img-tag">Límites D.S. N° 3</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_senaletica.jpg" alt="Señalética Zona Controlada">
+            <span class="img-tag">Señalética Radiológica</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Normativa Chilena Vigente (D.S. N° 3 y D.S. N° 133)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Decreto Supremo N° 3 (1985) - Reglamento de Protección Radiológica:</strong>
+            <p>Establece las medidas de protección radiológica personal y fija los límites máximos permisibles de dosis para el Personal Ocupacionalmente Expuesto (POE) en Chile.</p>
+          </div>
+          <div class="info-item">
+            <strong>Límites de Dosis Anuales en Chile (D.S. N° 3 / Recomendaciones ICRP):</strong>
+            <p>• Cuerpo Entero (Dosis Efectiva POE): 50 mSv/año según D.S. N° 3 vigente (con recomendación internacional ICRP de 20 mSv/año promediado en 5 años).<br>• Cristalino: 150 mSv/año en D.S. N° 3 (actualizado por ICRP a 20 mSv/año).<br>• Piel, Manos y Pies (Extremidades): 500 mSv/año.<br>• Mujer Embarazada (POE): Una vez declarado el embarazo, la dosis equivalente al feto no debe superar 1 mSv durante el resto de la gestación (0,5 rem en el texto original del D.S. 3).<br>• Público General: 1 mSv/año (ICRP) / 10% del límite POE en D.S. N° 3.</p>
+          </div>
+          <div class="info-item">
+            <strong>Decreto Supremo N° 133 (1984) - Autorizaciones:</strong>
+            <p>Regula las autorizaciones de instalación, funcionamiento y cierre de equipos generadores de radiaciones ionizantes (1ª, 2ª y 3ª categoría), así como la Autorización de Desempeño obligatoria para toda persona que opere estos equipos (exige curso de protección radiológica aprobado y vigilancia dosimétrica).</p>
+          </div>
+          <div class="info-item">
+            <strong>Clasificación y Señalización de Zonas:</strong>
+            <p>• Zona Controlada: Sala de rayos X o sala de examen donde se requieren procedimientos específicos y dosimetría personal obligatoria.<br>• Zona Supervisada: Sala de comando y pasillos colindantes sujetos a vigilancia ambiental.<br>• Señalética Obligatoria: Trébol radiactivo (símbolo internacional), luz roja de advertencia sobre el acceso durante el disparo y leyenda <em>"Peligro: Radiación Ionizante"</em>.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Deber Legal del POE:</strong>
+            <p>- Contar con Licencia/Autorización de Desempeño vigente otorgada por la SEREMI de Salud.<br>- Portar obligatoriamente el dosímetro personal durante toda la jornada laboral.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Dosimetría y EPP Plomados -->
+    <div id="detalle-dosimetria-epp" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_dosimetro.jpg" alt="Uso Correcto Dosímetro Personal">
+            <span class="img-tag">Dosímetro Personal (TLD/OSL)</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_delantal_plomado.jpg" alt="Elementos de Protección Plomada">
+            <span class="img-tag">EPP Plomados</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Dosimetría Personal y Elementos de Protección Plomada</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Vigilancia Dosimétrica Personal (TLD / OSL):</strong>
+            <p>Permite llevar el registro mensual o trimestral de la dosis recibida por cada trabajador, bajo control del Instituto de Salud Pública (ISP):<br>• Ubicación habitual: A la altura del tórax o bolsillo superior izquierdo.<br>• Con delantal plomado: Debe ir siempre por debajo del delantal a la altura del tórax/abdomen para medir la dosis real recibida por los órganos protegidos (si se usa un segundo dosímetro de cristalino/cuello, este se coloca por fuera sobre el protector tiroideo).</p>
+          </div>
+          <div class="info-item">
+            <strong>Cuidados Cotidianos del Dosímetro:</strong>
+            <p>- Es estrictamente personal e intransferible.<br>- Nunca llevarlo a casa, no dejarlo expuesto al sol o fuentes de calor ni lavarlo junto con el uniforme.<br>- Al terminar el turno, guardarlo en el tablero dosimétrico junto al dosímetro testigo, lejos de zonas con radiación.</p>
+          </div>
+          <div class="info-item">
+            <strong>Elementos de Protección Personal Plomados (EPP):</strong>
+            <p>• Delantal Plomado: Equivalencia habitual de 0,25 mm a 0,5 mm de Pb (atenúa más del 90-95% de la radiación dispersa en radiodiagnóstico).<br>• Protector Tiroideo: Collarín de 0,5 mm Pb imprescindible en fluoroscopia, hemodinamia y exámenes portátiles.<br>• Lentes Plomados: Con protección frontal y lateral (0,5 a 0,75 mm Pb) para prevenir cataratas radioinducidas.<br>• Guantes y Protectores Gonadales: Para inmovilización excepcional y blindaje de pacientes.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Almacenamiento y Control de Calidad de EPP:</strong>
+            <p>- Nunca dobles ni arrugues los delantales plomados; cuélgalos siempre extendidos en percheros especiales para evitar que se quiebre la lámina interna de plomo.<br>- Realizar control radiográfico o fluoroscópico anual de los EPP para detectar grietas o fisuras ocultas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.7 Ficha Pacientes Especiales -->
+    <div id="detalle-pacientes-especiales" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_embarazada.jpg" alt="Atención Paciente Embarazada">
+            <span class="img-tag">Protocolo Embarazo</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_pediatrico.jpg" alt="Radioprotección Paciente Pediátrico">
+            <span class="img-tag">Radioprotección Pediátrica</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Radioprotección en Pacientes Especiales (Embarazo y Pediatría)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>1. Paciente Embarazada o en Edad Fértil:</strong>
+            <p>El embrión y el feto tienen alta radiosensibilidad (especialmente durante la organogénesis entre las semanas 2 y 8, y el desarrollo del SNC entre semanas 8 y 15):<br>• Consulta obligatoria: Preguntar siempre con tacto y claridad a toda mujer en edad fértil (12 a 50 años) por la posibilidad de embarazo y fecha de última menstruación (FUM) antes del examen.<br>• Regla de los 10 días: En estudios electivos de abdomen/pelvis de alta dosis, se recomienda realizarlos dentro de los primeros 10 días desde el inicio de la menstruación.<br>• Consentimiento y Blindaje: Si el examen es clínicamente impostergable, evaluar alternativas sin radiación (Ecografía o RM); si se realiza Rx/TC, firmar consentimiento informado, colimar al máximo y cubrir el abdomen/pelvis con delantal plomado.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Paciente Pediátrico (Campaña Image Gently):</strong>
+            <p>Los niños presentan mayor tasa de división celular (mayor radiosensibilidad) y una esperanza de vida más larga para desarrollar efectos estocásticos:<br>• Ajuste de Parámetros Técnicos: Reducir kVp y mAs según peso y talla pediátrica; en TC emplear protocolos pediátricos dedicados.<br>• Uso de Rejilla Antidifusora: Retirar la rejilla (sin Bucky) en lactantes y niños pequeños cuando el espesor anatómico sea menor a 10-12 cm.<br>• Inmovilización: Preferir inmovilizadores mecánicos (bandas, sacos de arena, Pigg-O-Stat). Si se requiere sujeción humana, debe realizarla un acompañante adulto (nunca una embarazada ni personal del servicio de forma rutinaria) equipado con delantal y protector tiroideo.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Checklist Pre-Disparo:</strong>
+            <p>- Confirmar protocolo pediátrico o descartar gestación antes de pasar a sala.<br>- Verificar colimación exacta antes de salir a disparar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.8 Ficha Bioseguridad Hospitalaria, IAAS y REAS -->
+    <div id="detalle-bioseguridad-reas" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Bioseguridad y Radioprotección</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/bio_lavado_manos.jpg" alt="Precauciones Estándar e IAAS">
+            <span class="img-tag">Prevención IAAS</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/bio_reas_contenedores.jpg" alt="Segregación REAS DS 6 Chile">
+            <span class="img-tag">Manejo de REAS (D.S. N° 6)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Bioseguridad Hospitalaria, IAAS y Manejo de REAS (D.S. N° 6)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Precauciones Estándar y Prevención de IAAS:</strong>
+            <p>Se aplican en la atención de todos los pacientes para prevenir Infecciones Asociadas a la Atención en Salud:<br>• Higiene de Manos (5 Momentos OMS): Lavado clínico con agua y jabón o higienización con alcohol gel antes y después del contacto con cada paciente.<br>• Uso de EPP Clínicos: Guantes de procedimiento ante contacto con fluidos/mucosas, mascarilla quirúrgica o N95/KN95 según aislamiento respiratorio, pechera plástica y antiparras ante riesgo de salpicaduras.<br>• Aislamientos Hospitalarios: Verificar precauciones adicionales (Contacto, Gotitas o Aéreo) antes de recibir al paciente o realizar un Rx portátil.</p>
+          </div>
+          <div class="info-item">
+            <strong>Limpieza y Desinfección de Equipos Imagenológicos:</strong>
+            <p>• Mesas, Estatitivos y Chasis/Flat Panel: Desinfectar entre pacientes con toallas aprobadas (amonio cuaternario o alcohol al 70%, sin rociar líquido directamente sobre detectores digitales).<br>• Transductores de Ecografía: Retirar gel residual y realizar desinfección de nivel intermedio/alto (en endocavitarios usar siempre funda protectora estéril + desinfección de alto nivel).</p>
+          </div>
+          <div class="info-item">
+            <strong>Manejo de Residuos de Establecimientos de Atención de Salud (REAS - D.S. N° 6):</strong>
+            <p>Clasificación y segregación obligatoria en origen según normativa MINSAL:<br>• Bolsa Negra (Residuos Sólidos Asimilables a Domiciliarios): Papel, envoltorios limpios, toallas de secado de manos.<br>• Bolsa Amarilla (Residuos Especiales / Biológicos): Gasas o algodones saturados con sangre/fluidos, guantes contaminados, fundas de transductores endocavitarios.<br>• Contenedor Rígido Amarillo/Rojo (Cortopunzantes): Agujas de venopunción (vías periféricas para medio de contraste), bránulas, bisturíes. Nunca recapsular agujas y llenar máximo hasta 3/4 de su capacidad.<br>• Contenedor Rojo (Residuos Peligrosos): Restos de fármacos, sustancias químicas tóxicas o inflamables.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Actuación ante Accidente Cortopunzante:</strong>
+            <p>- Lava de inmediato la zona afectada con abundante agua y jabón.<br>- Avisa enseguida a tu tutor/jefatura directa y acude a la unidad de salud ocupacional o mutualidad dentro de las primeras 2 horas para evaluación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('bioseguridad-indice').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAIndice() {
+      document.getElementById('bioseguridad-indice').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

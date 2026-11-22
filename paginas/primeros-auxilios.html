@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Primeros Auxilios para el TSRR</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html" class="active">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Índice de Módulos de Primeros Auxilios -->
+    <div id="primeros-auxilios-indice">
+
+      <h2 class="titulo-seccion">Primeros Auxilios</h2>
+
+      <!-- Bloque 1: Evaluación Primaria y Signos Vitales -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-evaluacion-primaria')">
+        <div class="card-imagen">
+          <img src="../img/pa_evaluacion_primaria.jpg" alt="Evaluación Primaria Conciencia Respiración y Pulso">
+        </div>
+        <div class="card-contenido">
+          <h2>Evaluación Primaria, Conciencia, Respiración y Pulso</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Paro Cardiorrespiratorio, RCP y DEA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-rcp-dea')">
+        <div class="card-imagen">
+          <img src="../img/pa_rcp_dea.jpg" alt="Paro Cardiorrespiratorio RCP y Uso de DEA">
+        </div>
+        <div class="card-contenido">
+          <h2>Paro Cardiorrespiratorio, RCP Básico y Uso de DEA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Obstrucción de la Vía Aérea -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-ovace')">
+        <div class="card-imagen">
+          <img src="../img/pa_ovace_heimlich.jpg" alt="Obstrucción de la Vía Aérea OVACE">
+        </div>
+        <div class="card-contenido">
+          <h2>Obstrucción de la Vía Aérea por Cuerpo Extraño</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Reacciones Adversas a Medios de Contraste -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-ram-contraste')">
+        <div class="card-imagen">
+          <img src="../img/pa_ram_contraste.jpg" alt="Reacciones Adversas a Medios de Contraste">
+        </div>
+        <div class="card-contenido">
+          <h2>Reacciones Adversas a Medios de Contraste</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: Extravasación de Medio de Contraste -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-extravasacion')">
+        <div class="card-imagen">
+          <img src="../img/pa_extravasacion.jpg" alt="Extravasación de Medio de Contraste">
+        </div>
+        <div class="card-contenido">
+          <h2>Extravasación de Medio de Contraste Endovenoso</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Lipotimia, Síncope e Hipoglicemia -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-sincope-hipoglicemia')">
+        <div class="card-imagen">
+          <img src="../img/pa_sincope.jpg" alt="Lipotimia Síncope e Hipoglicemia">
+        </div>
+        <div class="card-contenido">
+          <h2>Lipotimia, Síncope Vasovagal e Hipoglicemia por Ayuno</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7: Hemorragias, Shock y Caídas en Sala -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-hemorragias-shock')">
+        <div class="card-imagen">
+          <img src="../img/pa_hemorragia_shock.jpg" alt="Control de Hemorragias y Estado de Shock">
+        </div>
+        <div class="card-contenido">
+          <h2>Control de Hemorragias, Estado de Shock y Caídas en Sala</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8: Crisis Convulsiva en Sala -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-convulsion')">
+        <div class="card-imagen">
+          <img src="../img/pa_convulsion.jpg" alt="Manejo de Crisis Convulsiva">
+        </div>
+        <div class="card-contenido">
+          <h2>Crisis Convulsiva y Posición Lateral de Seguridad</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Evaluación Primaria, Conciencia, Respiración y Pulso -->
+    <div id="detalle-evaluacion-primaria" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_abcde_esquema.jpg" alt="Esquema PAS y XABCDE">
+            <span class="img-tag">Conducta PAS y XABCDE</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_pulso_conciencia.jpg" alt="Valoración de Pulso y Conciencia">
+            <span class="img-tag">Conciencia, Respiración y Pulso</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Evaluación Primaria, Conciencia, Respiración y Pulso</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Conducta Inicial PAS — Proteger, Avisar y Socorrer:</strong>
+            <p>• Proteger: Asegura primero el entorno antes de intervenir; detén la emisión de rayos X o el desplazamiento del gantry, y en Resonancia Magnética ten siempre presente el campo magnético permanente.<br>• Avisar: Pide ayuda de inmediato al equipo médico o de enfermería del servicio, o activa la Clave Azul intrahospitalaria.<br>• Socorrer: Comienza la valoración primaria ordenada del paciente mientras llega el apoyo.</p>
+          </div>
+          <div class="info-item">
+            <strong>1. Valoración del Estado de Conciencia — Escala AVDI:</strong>
+            <p>Acércate al paciente, toca suavemente sus hombros y háblale en voz clara preguntando si se encuentra bien:<br>• A — Alerta: Está despierto, orientado y responde de forma espontánea.<br>• V — Verbal: Responde únicamente cuando le hablas.<br>• D — Dolor: Reacciona solo ante un estímulo doloroso, como presión en el trapecio o lecho ungueal.<br>• I — Inconsciente: No responde a ningún estímulo; pide ayuda de inmediato.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Valoración de la Respiración en máximo 10 segundos:</strong>
+            <p>Observa si el tórax se expande y escucha o siente el flujo de aire tras permeabilizar la vía aérea con maniobra frente-mentón, siempre que no exista sospecha de trauma cervical:<br>• Frecuencia Respiratoria Normal en Adulto: 12 a 20 respiraciones por minuto.<br>• Signos de Alarma: Ausencia de respiración o apnea, boqueo agónico o <em>gasping</em> que equivale a paro cardiorrespiratorio, bradipnea bajo 12 rpm, taquipnea sobre 20 rpm, estridor laríngeo o uso de musculatura accesoria.</p>
+          </div>
+          <div class="info-item">
+            <strong>3. Valoración del Pulso y Perfusión en máximo 10 segundos:</strong>
+            <p>• Paciente Consciente: Palpa el pulso radial con los dedos índice y medio en la cara anterolateral de la muñeca.<br>• Paciente Inconsciente: Palpa el pulso carotídeo en el cuello, lateral a la tráquea; en lactantes se utiliza el pulso braquial.<br>• Frecuencia Cardíaca Normal en Adulto: 60 a 100 latidos por minuto.<br>• Perfusión Periférica: Observa coloración de la piel buscando palidez o cianosis, temperatura cutánea y llene capilar, cuyo valor normal es menor a 2 segundos.</p>
+          </div>
+          <div class="info-item">
+            <strong>Enfoque Sistemático XABCDE:</strong>
+            <p>• X: Control de hemorragias exanguinantes.<br>• A: Vía aérea permeable con control de columna cervical.<br>• B: Buena ventilación y oxigenación, considerando saturación normal entre 95% y 100%.<br>• C: Circulación, control de pulso y presión arterial.<br>• D: Déficit neurológico mediante escala AVDI o Glasgow y evaluación pupilar.<br>• E: Exposición y prevención de hipotermia cubriendo al paciente con manta.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Rol Clave en Sala:</strong>
+            <p>- Como profesional en Imagenología sueles ser el primero en notar cuando un paciente se descompensa dentro de la sala. Evaluar conciencia, respiración y pulso en menos de 10 segundos marca la diferencia para activar a tiempo al equipo de respuesta rápida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha PCR, RCP y DEA -->
+    <div id="detalle-rcp-dea" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_compresiones.jpg" alt="Compresiones Torácicas RCP">
+            <span class="img-tag">RCP Alta Calidad 30:2</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_dea_parches.jpg" alt="Colocación Parches DEA">
+            <span class="img-tag">Desfibrilación con DEA</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Paro Cardiorrespiratorio, RCP Básico y Uso de DEA</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>1. Identificación del Paro Cardiorrespiratorio y Cadena de Supervivencia:</strong>
+            <p>Si el paciente no responde, no respira con normalidad y no tiene pulso carotídeo en un máximo de 10 segundos:<br>1. Activa de inmediato la Clave Azul y solicita Carro de Paro junto con el Desfibrilador Externo Automático.<br>2. Inicia compresiones torácicas sobre una superficie rígida, colocando la tabla de paro bajo el tórax si el paciente está en camilla.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Parámetros de RCP de Alta Calidad en Adulto:</strong>
+            <p>• Posición de manos: Talón de una mano en el centro del pecho sobre la mitad inferior del esternón y la otra mano encima entrelazando los dedos, con los brazos completamente rectos.<br>• Frecuencia: 100 a 120 compresiones por minuto.<br>• Profundidad: 5 a 6 cm, evitando superar los 6 cm.<br>• Reexpansión: Permite que el tórax vuelva por completo a su posición tras cada compresión sin quedarte apoyado encima.<br>• Ciclos: 30 compresiones por 2 ventilaciones usando bolsa-mascarilla Ambú conectada a oxígeno a 15 L/min y sellando con técnica C-E. Minimiza las interrupciones a menos de 10 segundos y releva al reanimador cada 2 minutos.</p>
+          </div>
+          <div class="info-item">
+            <strong>3. Uso del Desfibrilador Externo Automático:</strong>
+            <p>1. Enciende el DEA apenas llegue y sigue sus indicaciones de voz.<br>2. Descubre y seca el tórax; rasura solo si el exceso de vello impide que los parches peguen y evita colocarlos directamente sobre un marcapasos subcutáneo.<br>3. Adhiere los parches en región subclavicular derecha y línea axilar media izquierda.<br>4. Indica en voz alta que nadie toque al paciente durante el análisis del ritmo y antes de presionar el botón de descarga.<br>5. Reanuda las compresiones torácicas inmediatamente después de la descarga.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Alerta Crítica en Resonancia Magnética:</strong>
+            <p>- Nunca ingreses el Carro de Paro, tubos de oxígeno ferromagnéticos ni el DEA a la Zona IV donde está el imán. Ante un paro en RM, saca de inmediato al paciente hacia la Zona III en camilla amagnética antes de comenzar la reanimación avanzada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha OVACE -->
+    <div id="detalle-ovace" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_ovace_signo.jpg" alt="Signo Universal de Asfixia">
+            <span class="img-tag">Reconocimiento OVACE</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_heimlich.jpg" alt="Maniobra de Heimlich">
+            <span class="img-tag">Compresiones Abdominales</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Obstrucción de la Vía Aérea por Cuerpo Extraño</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Contexto en Imagenología:</strong>
+            <p>La obstrucción de la vía aérea puede presentarse durante estudios contrastados orales como trago de bario o contraste hidrosoluble en pacientes con disfagia, por prótesis dentales sueltas o al ingerir alimentos tras un ayuno prolongado.</p>
+          </div>
+          <div class="info-item">
+            <strong>1. Obstrucción Leve o Parcial:</strong>
+            <p>• Signos: Tos fuerte y efectiva, el paciente logra hablar o emitir sonidos y mantiene entrada de aire.<br>• Manejo: No golpees su espalda ni intervengas físicamente; anímalo a seguir tosiendo con fuerza hasta expulsar el cuerpo extraño y mantén vigilancia continua.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Obstrucción Grave o Total en Paciente Consciente:</strong>
+            <p>• Signos: Signo universal de asfixia llevando ambas manos al cuello, incapacidad para hablar, tos débil o silenciosa, estridor agudo y cianosis facial.<br>• Maniobra de Heimlich: Ubícate detrás del paciente, rodea su cintura, coloca tu puño cerrado con el pulgar hacia adentro justo por encima del ombligo y bajo el apéndice xifoides, cubre con la otra mano y aplica compresiones rápidas hacia adentro y hacia arriba en forma de J hasta desobstruir o hasta que pierda la conciencia. En embarazadas o personas obesas se realizan compresiones torácicas en el centro del esternón.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Si el Paciente Pierde la Conciencia:</strong>
+            <p>- Recuéstalo con cuidado en el suelo, activa Clave Azul e inicia RCP con ciclos de 30 compresiones y 2 ventilaciones, revisando visualmente la boca antes de ventilar para retirar el objeto solo si es visible y accesible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha RAM Contraste -->
+    <div id="detalle-ram-contraste" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_ram_sintomas.jpg" alt="Clasificación RAM Contraste">
+            <span class="img-tag">Clasificación Clínica RAM</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_carro_paro.jpg" alt="Carro de Paro en Imagenología">
+            <span class="img-tag">Carro de Paro y Oxígeno</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Reacciones Adversas a Medios de Contraste</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>1. Reacción Leve:</strong>
+            <p>• Signos: Náuseas, vómito aislado, sensación de calor generalizado, sabor metálico, urticaria localizada leve, prurito leve o estornudos.<br>• Manejo: Tranquiliza al paciente, conserva la vía venosa permeable, observa su evolución durante 20 a 30 minutos y avisa al médico radiólogo o enfermería.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Reacción Moderada:</strong>
+            <p>• Signos: Urticaria generalizada, eritema difuso, edema facial leve sin dificultad respiratoria, broncoespasmo leve, hipotensión moderada y taquicardia.<br>• Manejo: Detén de inmediato la administración, avisa al médico radiólogo y enfermería, administra oxígeno por mascarilla, controla signos vitales y prepara antihistamínicos, corticoides o broncodilatadores según indicación médica.</p>
+          </div>
+          <div class="info-item">
+            <strong>3. Reacción Severa o Shock Anafiláctico:</strong>
+            <p>• Signos: Edema laríngeo con estridor, ronquera y disnea severa, broncoespasmo grave, hipotensión profunda, cianosis y compromiso de conciencia.<br>• Manejo: Activa Clave Azul al instante, acerca Carro de Paro y DEA, permeabiliza la vía aérea, administra oxígeno al 100%, posiciona en decúbito supino con piernas elevadas y asiste en la administración urgente de Adrenalina y fluidoterapia.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Precaución Fundamental en Sala:</strong>
+            <p>- Revisa siempre el cuestionario de seguridad antes de inyectar contraste yodado o Gadolinio, verificando alergias previas, asma y función renal.<br>- Nunca retires la bránula apenas termina el escaneo; mantenla unos minutos hasta confirmar que no aparezcan reacciones agudas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha Extravasación -->
+    <div id="detalle-extravasacion" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_extravasacion_sitio.jpg" alt="Detección de Extravasación">
+            <span class="img-tag">Evaluación Sitio Punción</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_compresa_fria.jpg" alt="Medidas Locales Extravasación">
+            <span class="img-tag">Manejo Local</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Extravasación de Medio de Contraste Endovenoso</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Detección Precoz en Bomba Inyectora:</strong>
+            <p>Se sospecha ante un aumento brusco en la curva de presión de la bomba inyectora, dolor urente o ardor referido por el paciente en el sitio de punción, aumento de volumen local, induración y palidez o enrojecimiento de la piel.</p>
+          </div>
+          <div class="info-item">
+            <strong>Protocolo de Actuación Inmediata:</strong>
+            <p>1. Detén de inmediato la bomba inyectora.<br>2. Da aviso al profesional médico y de enfermería a cargo.<br>3. Aspira suavemente el mayor volumen residual posible a través del catéter antes de retirarlo.<br>4. Retira la bránula y comprime con suavidad hasta lograr hemostasia.<br>5. Eleva la extremidad afectada por encima del nivel del corazón para favorecer el drenaje.<br>6. Aplica compresas frías envueltas en un paño durante 15 a 20 minutos para reducir el edema y el dolor.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Signos de Alarma de Síndrome Compartimental:</strong>
+            <p>- Evalúa siempre la perfusión distal revisando pulso radial, llene capilar menor a 2 segundos, temperatura y sensibilidad de los dedos. Si notas dolor intenso progresivo, frialdad, hormigueo o ampollas, el paciente requiere evaluación médica urgente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Lipotimia, Síncope e Hipoglicemia -->
+    <div id="detalle-sincope-hipoglicemia" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_trendelenburg.jpg" alt="Posición de Seguridad y Elevación EEII">
+            <span class="img-tag">Elevación de Piernas</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_hemoglucotest.jpg" alt="Control Hemoglucotest">
+            <span class="img-tag">Control de Glicemia</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Lipotimia, Síncope Vasovagal e Hipoglicemia por Ayuno</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>1. Lipotimia y Síncope Vasovagal:</strong>
+            <p>• Causas frecuentes en sala: Ansiedad, temor a punciones o espacios cerrados en Resonancia, permanecer mucho rato de pie en radiografías de columna o incorporarse muy rápido tras estar acostado.<br>• Signos: Palidez, sudoración fría, mareos, visión borrosa, bradicardia e hipotensión transitoria.<br>• Manejo: Sostén al paciente para evitar que caiga, recuéstalo en decúbito supino, eleva sus piernas entre 30° y 45°, suelta prendas ajustadas y controla signos vitales hasta que se recupere por completo.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Hipoglicemia Aguda bajo 70 mg/dL:</strong>
+            <p>• Causas frecuentes en sala: Ayuno prolongado previo a TC, RM o Ecografía en pacientes diabéticos que igualmente se aplicaron insulina o tomaron hipoglicemiantes.<br>• Signos: Temblor fino, sudoración fría, palpitaciones, hambre, irritabilidad, confusión o pérdida de conciencia.<br>• Manejo si está Consciente con Regla del 15: Administra 15 g de carbohidratos simples por vía oral, como medio vaso de jugo azucarado o 3 cucharaditas de azúcar disueltas en agua, y controla hemoglucotest a los 15 minutos.<br>• Manejo si está Inconsciente o Confuso: No des líquidos ni alimentos por boca; ubícalo en posición lateral de seguridad y avisa para administración endovenosa de Suero Glucosado al 30%.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Prevención Clínica:</strong>
+            <p>- Agenda a primera hora de la mañana a los pacientes diabéticos que requieren ayuno y acompáñalos siempre al bajar de la camilla.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.7 Ficha Hemorragias, Shock y Caídas -->
+    <div id="detalle-hemorragias-shock" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_compresion_directa.jpg" alt="Compresión Directa de Hemorragia">
+            <span class="img-tag">Control de Hemorragia</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_prevencion_caidas.jpg" alt="Prevención y Manejo de Caídas">
+            <span class="img-tag">Seguridad y Traslado</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Control de Hemorragias, Estado de Shock y Caídas en Sala</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>1. Control de Hemorragias Externas:</strong>
+            <p>Pueden ocurrir en pacientes politraumatizados derivados desde Urgencia, tras biopsias guiadas por imagen o por retiro accidental de vías venosas:<br>1. Ponte guantes de procedimiento antes de actuar.<br>2. Aplica presión directa y firme sobre el punto sangrante con gasas o apósitos estériles.<br>3. Si el primer apósito se empapa de sangre, no lo retires para no desprender el coágulo formado; coloca otro apósito encima y mantén un vendaje compresivo.<br>4. Eleva la extremidad afectada siempre que no exista sospecha de fractura.</p>
+          </div>
+          <div class="info-item">
+            <strong>2. Reconocimiento y Manejo Inicial del Shock:</strong>
+            <p>• Signos de Alarma: Piel pálida, fría y pegajosa; pulso rápido y débil sobre 100 lpm; respiración rápida y superficial; hipotensión; sed intensa, ansiedad o letargo.<br>• Manejo: Mantén al paciente acostado en decúbito supino, controla la causa del sangrado o reacción, abrígalo para evitar hipotermia, no le des líquidos por boca y solicita intervención médica urgente.</p>
+          </div>
+          <div class="info-item">
+            <strong>3. Caídas o Traumatismos en Sala:</strong>
+            <p>• Actuación: No levantes bruscamente al paciente del suelo. Evalúa su estado de conciencia, dolor localizado, deformidad de extremidades o posible golpe en la cabeza. Avisa de inmediato al médico de turno para su evaluación clínica y notificación del evento adverso.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Prevención de Caídas en Imagenología:</strong>
+            <p>- Usa siempre barandas o cinturones de sujeción en camillas de TC y RM, frena las ruedas antes de cada transferencia y nunca dejes solo en la mesa a niños, adultos mayores o pacientes sedados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.8 Ficha Crisis Convulsiva -->
+    <div id="detalle-convulsion" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAIndice()">← Volver a Primeros Auxilios</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/pa_posicion_seguridad.jpg" alt="Posición Lateral de Seguridad">
+            <span class="img-tag">Posición Lateral Seguridad</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/pa_proteccion_cabeza.jpg" alt="Protección Craneal">
+            <span class="img-tag">Protección en Crisis</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Crisis Convulsiva y Posición Lateral de Seguridad</h2>
+          <hr class="ficha-linea">
+          <div class="info-item">
+            <strong>Qué Hacer Durante la Crisis:</strong>
+            <p>1. Mantén la calma, pide ayuda al equipo clínico y controla el tiempo de duración del episodio.<br>2. Evita que el paciente caiga de la camilla o se golpee contra el equipo, colocando un cojín o prenda blanda bajo su cabeza.<br>3. Despeja objetos cercanos y suelta prendas apretadas alrededor del cuello.<br>4. Cuando terminen los movimientos convulsivos, coloca al paciente en Posición Lateral de Seguridad para mantener permeable la vía aérea y evitar broncoaspiración de saliva o vómito, vigilando respiración y pulso.</p>
+          </div>
+          <div class="info-item">
+            <strong>Qué Nunca Hacer:</strong>
+            <p>- No introduzcas dedos, bajalenguas ni ningún objeto en la boca del paciente.<br>- No sujetes ni fuerces sus extremidades durante las sacudidas, ya que puedes provocar luxaciones o fracturas.<br>- No administres agua ni medicamentos orales mientras esté somnoliento o desorientado.</p>
+          </div>
+          <div class="info-item info-instruccion">
+            <strong>Criterio de Emergencia Vital:</strong>
+            <p>- Si la crisis convulsiva dura más de 5 minutos o se repiten crisis seguidas sin que el paciente recupere la conciencia entre ellas, activa Clave Azul de inmediato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('primeros-auxilios-indice').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAIndice() {
+      document.getElementById('primeros-auxilios-indice').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

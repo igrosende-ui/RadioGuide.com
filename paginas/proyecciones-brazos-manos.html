@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Extremidad Superior (Brazos y Manos)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Proyecciones de Extremidad Superior (Brazos y Manos) -->
+    <div id="brazos-manos-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Proyecciones de Extremidad Superior</h2>
+
+      <!-- Bloque 1: Mano PA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-mano-pa')">
+        <div class="card-imagen">
+          <img src="../img/rx_mano_pa.jpg" alt="Mano PA">
+        </div>
+        <div class="card-contenido">
+          <h2>Mano PA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Mano Oblicua PA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-mano-oblicua')">
+        <div class="card-imagen">
+          <img src="../img/rx_mano_oblicua.jpg" alt="Mano Oblicua PA">
+        </div>
+        <div class="card-contenido">
+          <h2>Mano Oblicua PA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Mano Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-mano-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_mano_lat.jpg" alt="Mano Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Mano Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Mano Norgaard -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-mano-norgaard')">
+        <div class="card-imagen">
+          <img src="../img/rx_mano_norgaard.jpg" alt="Mano Norgaard">
+        </div>
+        <div class="card-contenido">
+          <h2>Mano - Método de Norgaard</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: Dedos 2° al 5° (PA, Lateral y Oblicuo) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-dedos')">
+        <div class="card-imagen">
+          <img src="../img/rx_dedos.jpg" alt="Dedos 2° al 5°">
+        </div>
+        <div class="card-contenido">
+          <h2>Dedos del 2° al 5° (PA, Lateral y Oblicuo)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Pulgar (AP/PA, Lateral y Oblicuo) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-pulgar')">
+        <div class="card-imagen">
+          <img src="../img/rx_pulgar.jpg" alt="Pulgar AP Lateral y Oblicuo">
+        </div>
+        <div class="card-contenido">
+          <h2>Pulgar / 1er Dedo (AP, Lateral y Oblicuo)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8: Muñeca PA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-muneca-pa')">
+        <div class="card-imagen">
+          <img src="../img/rx_muneca_pa.jpg" alt="Muñeca PA">
+        </div>
+        <div class="card-contenido">
+          <h2>Muñeca PA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 9: Muñeca Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-muneca-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_muneca_lat.jpg" alt="Muñeca Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Muñeca Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 10: Muñeca Oblicua (PA y AP) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-muneca-oblicua')">
+        <div class="card-imagen">
+          <img src="../img/rx_muneca_oblicua.jpg" alt="Muñeca Oblicua">
+        </div>
+        <div class="card-contenido">
+          <h2>Muñeca Oblicua (Oblicua PA y Oblicua AP)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 13: Túnel Carpiano (Inferosuperior Gaynor-Hart y Superoinferior) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-tunel-carpiano')">
+        <div class="card-imagen">
+          <img src="../img/rx_tunel_carpiano.jpg" alt="Túnel Carpiano Gaynor-Hart">
+        </div>
+        <div class="card-contenido">
+          <h2>Túnel Carpiano (Inferosuperior Gaynor-Hart y Superoinferior)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 14: Antebrazo AP y Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-antebrazo')">
+        <div class="card-imagen">
+          <img src="../img/rx_antebrazo.jpg" alt="Antebrazo AP y Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Antebrazo (AP y Lateral)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 15: Codo AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-codo-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_codo_ap.jpg" alt="Codo AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Codo AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 16: Codo Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-codo-lat')">
+        <div class="card-imagen">
+          <img src="../img/rx_codo_lat.jpg" alt="Codo Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Codo Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 17: Codo Oblicuas (Medial Interna y Lateral Externa) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-codo-oblicuas')">
+        <div class="card-imagen">
+          <img src="../img/rx_codo_oblicuas.jpg" alt="Codo Oblicuas">
+        </div>
+        <div class="card-contenido">
+          <h2>Codo Oblicuas (Medial Interna y Lateral Externa)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 18: Húmero AP y Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-humero')">
+        <div class="card-imagen">
+          <img src="../img/rx_humero.jpg" alt="Húmero AP y Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Húmero (AP y Lateral)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 19: Hombro AP (Neutra) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-hombro-ap')">
+        <div class="card-imagen">
+          <img src="../img/rx_hombro_ap.jpg" alt="Hombro AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Hombro AP (Posición Neutra)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 20: Hombro AP en Rotación Interna y Externa -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-hombro-rotaciones')">
+        <div class="card-imagen">
+          <img src="../img/rx_hombro_rotaciones.jpg" alt="Hombro AP Rotación Interna y Externa">
+        </div>
+        <div class="card-contenido">
+          <h2>Hombro AP en Rotación Interna y Externa</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 21: Hombro Outlet (Escápula en Y) -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-hombro-outlet')">
+        <div class="card-imagen">
+          <img src="../img/rx_hombro_outlet.jpg" alt="Hombro Outlet">
+        </div>
+        <div class="card-contenido">
+          <h2>Hombro Outlet (Desfiladero Supraespinoso / Escápula en Y)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 22: Hombro Transtorácico -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-hombro-transtoracico')">
+        <div class="card-imagen">
+          <img src="../img/rx_hombro_transtoracico.jpg" alt="Hombro Transtorácico">
+        </div>
+        <div class="card-contenido">
+          <h2>Hombro Transtorácico</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Mano PA -->
+    <div id="detalle-mano-pa" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_mano_pa.jpg" alt="Posicionamiento Paciente Mano PA">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_mano_pa.jpg" alt="Radiografía Mano PA">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Mano PA</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Anillos, pulseras, relojes, férulas metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca y antebrazo distal (remangar prendas gruesas).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm (Transversal dividido) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky (Directo sobre el receptor).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado a nivel de la cabeza del 3° metacarpiano o 3° articulación metacarpofalángica (MCF).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado al borde de la mesa de rayos, colocar la extremidad superior en el plano horizontal de la placa. Flexionar el codo en 90°. Mano en pronación con los dedos moderadamente separados. Alinear el eje longitudinal de la mano con el eje longitudinal del chasis.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>45 - 52 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>2 - 4 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Mano Oblicua PA -->
+    <div id="detalle-mano-oblicua" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_mano_oblicua.jpg" alt="Posicionamiento Paciente Mano Oblicua PA">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_mano_oblicua.jpg" alt="Radiografía Mano Oblicua PA">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Mano Oblicua PA</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Anillos, pulseras, relojes.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm (Transversal) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado a nivel de la cabeza del 3° metacarpiano o 3° articulación metacarpofalángica.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado al borde de la mesa de rayos, extremidad superior en el mismo plano del chasis y codo flectado en 90°. Desde mano en pronación, realizar una oblicuidad hacia lateral hasta formar un ángulo de 45° con respecto a la placa (apoyar dedos sobre cuña de espuma de 45° para evitar superposición de falanges).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>45 - 52 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>2 - 4 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Mano Lateral -->
+    <div id="detalle-mano-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_mano_lat.jpg" alt="Posicionamiento Paciente Mano Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_mano_lat.jpg" alt="Radiografía Mano Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Mano Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Anillos, pulseras, relojes.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal) o 24 x 30 cm (Transversal /2) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado a nivel de la 2ª articulación metacarpofalángica.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado al borde de la mesa, extremidad superior en el mismo plano del chasis, codo flectado en 90°. Mano en lateral estricto (apoyando borde cubital), con los dedos superpuestos y el pulgar en línea con la mano o hacia distal de la misma (desproyectado).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>50 - 55 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Mano Norgaard -->
+    <div id="detalle-mano-norgaard" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_mano_norgaard.jpg" alt="Posicionamiento Paciente Mano Norgaard">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_mano_norgaard.jpg" alt="Radiografía Mano Norgaard">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Mano - Método de Norgaard</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Anillos, pulseras y relojes de ambas manos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar ambas muñecas.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm (Transversal) o Flat Panel (se toman ambas manos simultáneamente). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Dirigido al punto medio entre las dos estructuras (ambas manos) a nivel de las articulaciones metacarpofalángicas.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado al borde de la mesa de rayos, colocar toda la extremidad superior extendida con ambas manos en supino (AP), rotadas medialmente en 45° elevando ambos pulgares (apoyando dorsos cubitales sobre cuñas de 45° y dedos semiflectados en posición de atrapar una pelota).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>48 - 54 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha Dedos 2° al 5° -->
+    <div id="detalle-dedos" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_dedos.jpg" alt="Posicionamiento Dedos 2 al 5">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_dedos.jpg" alt="Radiografía Dedos 2 al 5">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Dedos del 2° al 5°</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Anillos, férulas metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Nada.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal dividido en /2 o /3) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado en la articulación interfalángica proximal (IFP) del dedo afectado.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado al final de la mesa de rayos, antebrazo extendido: <strong>PA:</strong> Dedo a explorar apoyado plano en pronación sobre el chasis, demás dedos separados. <strong>Lateral:</strong> Dedo apoyado lateralmente (2° y 3° hacia radial; 4° y 5° hacia cubital), demás dedos flectados y separados. <strong>Oblicuo:</strong> Dedo apoyado oblicuamente en 45° sobre cuña de espuma, demás dedos separados.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>42 - 48 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>1.5 - 3 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Pulgar -->
+    <div id="detalle-pulgar" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_pulgar.jpg" alt="Posicionamiento Pulgar">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_pulgar.jpg" alt="Radiografía Pulgar">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Pulgar / 1er Dedo (AP, Lateral y Oblicuo)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Pulseras, relojes, férulas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Nada.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal dividido en /2 o /3) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular y al centro del chasis).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente y por el lado en la articulación interfalángica proximal / metacarpofalángica del pulgar.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado al final de la mesa con el antebrazo extendido: <strong>AP (Método de Roberts):</strong> Rotar internamente el brazo y la mano hasta apoyar la cara posterior/dorsal del pulgar sobre el receptor. <strong>Lateral:</strong> Codo flectado, mano en pronación arqueada hasta apoyar lateralmente el pulgar sobre el chasis. <strong>Oblicuo:</strong> Codo flectado, mano en pronación natural apoyando oblicuamente el pulgar en 45°.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>44 - 50 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>2 - 3.5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.8 Ficha Muñeca PA -->
+    <div id="detalle-muneca-pa" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_muñeca_pa.jpg" alt="Posicionamiento Muñeca PA">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_muneca_pa.jpg" alt="Radiografía Muñeca PA">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Muñeca PA</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras, anillos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca y antebrazo distal.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal /2) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al centro del área carpiana (punto medio entre apófisis estiloides radial y cubital).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado, extremidad superior en el mismo plano horizontal que la placa, codo flectado en 90°. Mano en pronación alineando el eje longitudinal de mano y antebrazo con el chasis. Arquear ligeramente la mano y flexionar los dedos para que el carpo quede en contacto íntimo con el receptor.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>50 - 55 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.9 Ficha Muñeca Lateral -->
+    <div id="detalle-muneca-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_muñeca_lat.jpg" alt="Posicionamiento Muñeca Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_muneca_lat.jpg" alt="Radiografía Muñeca Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Muñeca Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal /2) o Flat Panel. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al centro del área del carpo (sobre la tabaquera anatómica / base del 1er metacarpiano).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Toda la extremidad superior en el mismo plano horizontal que la placa, codo flectado en 90°. Mano en posición lateral estricta (con el pulgar hacia arriba) apoyando borde cubital, alineando eje longitudinal de mano y antebrazo con el chasis.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 60 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.10 Ficha Muñeca Oblicua -->
+    <div id="detalle-muneca-oblicua" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_muñeca_oblicua.jpg" alt="Posicionamiento Muñeca Oblicua">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_muneca_oblicua.jpg" alt="Radiografía Muñeca Oblicua">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Muñeca Oblicua PA</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Transversal /2). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al área carpiana).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al centro del área del carpo.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Extremidad superior en el plano horizontal de la mesa, codo flectado en 90°: <strong>Oblicua PA (Interna):</strong> A partir de la posición lateral, rotar la muñeca medialmente (hacia pronación) hasta formar un ángulo de 45° con la placa (despeja escafoides y trapecio). <strong>Oblicua AP (Externa):</strong> A partir de la posición lateral, rotar la muñeca lateralmente (hacia supinación) hasta formar un ángulo de 45° con la placa (despeja pisiforme y piramidal).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>52 - 58 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.13 Ficha Túnel Carpiano -->
+    <div id="detalle-tunel-carpiano" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_tunel_carpiano.jpg" alt="Posicionamiento Túnel Carpiano">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_tunel_carpiano.jpg" alt="Radiografía Túnel Carpiano">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Túnel Carpiano (Inferosuperior Gaynor-Hart y Superoinferior)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras, anillos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar muñeca.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p><strong>Inferosuperior (Gaynor-Hart):</strong> Angulado en 25° a 30° hacia caudal a lo largo del eje de la mano. <strong>Superoinferior:</strong> 0° Perpendicular al centro del chasis.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p><strong>Inferosuperior:</strong> Por la cara palmar a 2,5 cm distal a la base del 4° metacarpiano (centro del túnel carpiano). <strong>Superoinferior:</strong> Tangencial al canal carpiano.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p><strong>Método de Gaynor-Hart (Inferosuperior):</strong> Codo extendido, mano en pronación, muñeca en hiperextensión (dorsiflexión) sujetando los dedos con una cinta o con la mano opuesta para mantener el eje de la mano perpendicular al chasis; rotar discretamente hacia el lado radial para separar pisiforme y gancho del ganchoso. <strong>Proyección Superoinferior:</strong> Paciente de pie junto a la mesa inclinado hacia delante, cara palmar sobre el chasis con muñeca en dorsiflexión extrema.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 7 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.14 Ficha Antebrazo AP y Lateral -->
+    <div id="detalle-antebrazo" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_antebrazo.jpg" alt="Posicionamiento Antebrazo AP y Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_antebrazo.jpg" alt="Radiografía Antebrazo AP y Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Antebrazo (AP y Lateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras, anillos, férulas metálicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar completamente desde codo hasta muñeca.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 40 cm (Longitudinal dividido /2) o 35 x 43 cm (debe incluir articulación de codo y muñeca). Folio regular/fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al punto medio del antebrazo).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al punto medio de la diáfisis del antebrazo (incluyendo ambas articulaciones: radiocarpiana y codo).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Extremidad superior en el mismo plano horizontal que la placa, eje longitudinal alineado con el chasis: <strong>Antebrazo AP:</strong> Codo extendido, mano en posición supina (evita cruce de radio sobre cúbito). Inclinar lateralmente al paciente para que los epicóndilos del húmero queden paralelos a la placa. <strong>Antebrazo Lateral:</strong> Codo flectado en 90°, mano en posición lateral estricta (pulgar hacia arriba) apoyando borde cubital.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.15 Ficha Codo AP -->
+    <div id="detalle-codo-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_codo_ap.jpg" alt="Posicionamiento Codo AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_codo_ap.jpg" alt="Radiografía Codo AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Codo AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras, mangas con botones o cierres.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar brazo y antebrazo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Transversal /2). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al centro de la articulación del codo).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al centro de la articulación del codo (punto medio entre ambos epicóndilos humerales).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente sentado, extremidad superior en el mismo plano que la placa. Codo totalmente extendido y mano en posición supina. Alinear eje longitudinal del brazo y antebrazo con el chasis. Inclinar lateralmente al paciente para lograr que los epicóndilos del húmero queden paralelos a la placa.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.16 Ficha Codo Lateral -->
+    <div id="detalle-codo-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_codo_lat.jpg" alt="Posicionamiento Codo Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_codo_lat.jpg" alt="Radiografía Codo Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Codo Lateral</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras, elementos metálicos en manga.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar brazo y antebrazo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm (Transversal /2). Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al centro de la articulación del codo).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Sobre el epicóndilo lateral / centro de la articulación del codo.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Extremidad superior en el mismo plano horizontal del chasis (descender hombro al nivel de la mesa). Codo en flexión estricta de 90°, eje longitudinal del chasis alineado con brazo/antebrazo, epicóndilos humerales perpendiculares al plano de la placa y mano en posición lateral (pulgar hacia arriba).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.17 Ficha Codo Oblicuas -->
+    <div id="detalle-codo-oblicuas" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_codo_oblicuas.jpg" alt="Posicionamiento Codo Oblicuas">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_codo_oblicuas.jpg" alt="Radiografía Codo Oblicuas">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Codo Oblicuas</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Relojes, pulseras.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Despejar brazo y antebrazo.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm o 24 x 30 cm. Folio fine.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sin Bucky.</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al centro de la articulación del codo).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al centro de la articulación del codo.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Extremidad superior en el mismo plano horizontal de la placa, codo extendido: <strong>Oblicua Medial (Interna):</strong> Mano en pronación, extremidad superior rotada internamente de modo que el codo quede en posición oblicua medial interna de 45° (despeja apófisis coronoides y tróclea). <strong>Oblicua Lateral (Externa):</strong> Mano en supinación, rotar externamente la extremidad superior colocando la articulación del codo en oblicua lateral externa de 45° (despeja cabeza y cuello del radio libres de superposición).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>55 - 62 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>4 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.<br>- Protección Tiroidea.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.18 Ficha Húmero AP y Lateral -->
+    <div id="detalle-humero" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_humero.jpg" alt="Posicionamiento Húmero AP y Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_humero.jpg" alt="Radiografía Húmero AP y Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Húmero (AP y Lateral)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, relojes, pulseras, broches o cierres en hombro/brazo.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar brazo y hombro (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>30 x 40 cm o 35 x 43 cm (Longitudinal, debe incluir articulación de hombro y codo). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural en bipedestación o camilla en decúbito dorsal).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al centro de la diáfisis del húmero).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Al punto medio de la diáfisis humeral.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>En bipedestación o decúbito dorsal, brazo centrado al chasis y ligeramente abducido para evitar superposiciones con el tórax: <strong>Húmero AP:</strong> Mano en posición supina y articulación del codo extendida tanto como sea posible. <strong>Húmero Lateral:</strong> Flexionar el codo 90° y colocar la mano sobre el abdomen.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 72 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>8 - 12 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.19 Ficha Hombro AP (Neutra) -->
+    <div id="detalle-hombro-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_hombro_ap.jpg" alt="Posicionamiento Hombro AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_hombro_ap.jpg" alt="Radiografía Hombro AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Hombro AP (Posición Neutra)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, collares, sostén con broches o tirantes metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar región escapular y hombro (usar bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural o camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en 15° hacia caudal.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Borde interno de la cabeza humeral (apófisis coracoides) por el frente y por el lado al centro de la articulación glenohumeral.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Paciente en bipedestación o decúbito, girado en 10° a 45° apoyando el lado a examinar (oblicua posterior para despejar cavidad glenoidea), brazo extendido y mano en posición neutra apoyada en el muslo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 75 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>10 - 16 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente y Radioprotección:</strong><p>- En apnea respiratoria.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.20 Ficha Hombro AP Rotaciones -->
+    <div id="detalle-hombro-rotaciones" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_hombro_rotaciones.jpg" alt="Posicionamiento Hombro AP Rotaciones">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_hombro_rotaciones.jpg" alt="Radiografía Hombro AP Rotación Externa">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Hombro AP en Rotación Interna y Externa</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, collares, sostén con tirantes/broches metálicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural o camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado en 15° hacia caudal.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Borde interno de la cabeza humeral por el frente y por el lado el centro de la articulación.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Girado en 10° a 45° apoyando el lado a examinar: <strong>Rotación Interna:</strong> Girar la mano y el brazo hacia interno completamente (dorso de la mano apoyado en el muslo; proyecta de perfil el troquín/tuberosidad menor). <strong>Rotación Externa:</strong> Girar la mano y el brazo hacia externo completamente (palma hacia adelante/afuera; proyecta de perfil el troquíter/tuberosidad mayor y espacio subacromial).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 75 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>10 - 16 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente y Radioprotección:</strong><p>- En apnea respiratoria.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.21 Ficha Hombro Outlet -->
+    <div id="detalle-hombro-outlet" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_hombro_outlet.jpg" alt="Posicionamiento Hombro Outlet">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_hombro_outlet.jpg" alt="Radiografía Hombro Outlet">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Hombro Outlet (Desfiladero Supraespinoso / Escápula en Y)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, collares, sostén.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>Angulado de 15° a 40° hacia caudal (tangencial al espacio subacromial / espina de la escápula).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>La articulación del hombro al centro de la placa (borde superior del chasis a 5 cm sobre el hombro).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>En bipedestación en oblicua anterior con el hombro de interés apoyado sobre el estativo y el lado contrario alejado en 45° (cuerpo de la escápula perpendicular al RI). El brazo del lado afectado queda relajado en posición neutra o codo en 90°.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 78 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>12 - 20 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente y Radioprotección:</strong><p>- En apnea respiratoria.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.22 Ficha Hombro Transtorácico -->
+    <div id="detalle-hombro-transtoracico" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Extremidad Superior</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/paciente_hombro_transtoracico.jpg" alt="Posicionamiento Hombro Transtorácico">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/rx_hombro_transtoracico.jpg" alt="Radiografía Hombro Transtorácico">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Hombro Transtorácico (Método de Lawrence)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, sostén con barbas/broches metálicos, botones torácicos.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>24 x 30 cm o 30 x 40 cm (Longitudinal). Folio regular.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal (o 10°-15° cefálico si el paciente no logra elevar bien el brazo opuesto).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Por el frente el eje medio de la estructura (húmero proximal / cuello quirúrgico) y por el lado a nivel de la articulación glenohumeral, atravesando el tórax.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>En bipedestación en lateral estricto, apoyando el hombro lesionado en el estativo. Elevar el brazo sano sobre la cabeza apoyando el antebrazo en ella para evitar su superposición sobre el hombro afectado.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>75 - 85 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>30 - 50 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente y Radioprotección:</strong><p>- En apnea inspiratoria.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('brazos-manos-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('brazos-manos-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

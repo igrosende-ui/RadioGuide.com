@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioGuide.com - Proyecciones de Tórax y Abdomen</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>Radio<span>Guide</span>.com</h1>
+      <p>Plataforma Web para estudiantes de Imagenología</p>
+    </div>
+  </header>
+
+  <!-- Barra de Navegación Principal -->
+  <nav class="navbar">
+    <a href="../index.html">Inicio</a>
+    <a href="posicionamiento.html" class="active">Posicionamiento y Preparación del paciente</a>
+    <a href="bioseguridad.html">Bioseguridad y Radioprotección</a>
+    <a href="primeros-auxilios.html">Primeros Auxilios</a>
+    <a href="tips.html">Tips Clínicos</a>
+    <a href="nota-autor.html">Nota de Autor</a>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="container">
+    
+    <!-- VISTA 1: Lista de Proyecciones de Tórax y Abdomen -->
+    <div id="torax-abdomen-proyecciones">
+      <div style="margin-bottom: 20px;">
+        <a href="posicionamiento.html" class="btn-volver-link">← Volver a Posicionamiento</a>
+      </div>
+      
+      <h2 class="titulo-seccion">Proyecciones de Tórax y Abdomen</h2>
+
+      <!-- Bloque 1: Tórax PA -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-torax-pa')">
+        <div class="card-imagen">
+          <img src="../img/torax-pa-rx.jpg" alt="Tórax PA">
+        </div>
+        <div class="card-contenido">
+          <h2>Tórax PA</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Tórax Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-torax-lat')">
+        <div class="card-imagen">
+          <img src="../img/torax-lat-rx.jpg" alt="Tórax Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Tórax Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Tórax AP Decúbito Lateral -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-torax-dl')">
+        <div class="card-imagen">
+          <img src="../img/torax-dl-rx.jpg" alt="Tórax AP Decúbito Lateral">
+        </div>
+        <div class="card-contenido">
+          <h2>Tórax AP Decúbito Lateral</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Tórax AP Hiperlordótica -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-torax-lordotica')">
+        <div class="card-imagen">
+          <img src="../img/torax-lordotica-rx.jpg" alt="Tórax AP Hiperlordótica">
+        </div>
+        <div class="card-contenido">
+          <h2>Tórax AP Hiperlordótica</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 5: Parrilla Costal -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-parrilla-costal')">
+        <div class="card-imagen">
+          <img src="../img/parrilla-costal-rx.jpg" alt="Parrilla Costal">
+        </div>
+        <div class="card-contenido">
+          <h2>Parrilla Costal (Alta / Baja / Oblicua)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 6: Abdomen AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-abdomen-ap')">
+        <div class="card-imagen">
+          <img src="../img/abdomen-ap-rx.jpg" alt="Abdomen AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Abdomen AP (Decúbito Supino / Bipedestación)</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 7: Abdomen AP en Decúbito Lateral Izquierdo -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-abdomen-dl')">
+        <div class="card-imagen">
+          <img src="../img/abdomen-dl-rx.jpg" alt="Abdomen DL Izquierdo">
+        </div>
+        <div class="card-contenido">
+          <h2>Abdomen AP en Decúbito Lateral Izquierdo</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 8: Renal Simple AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-renal-simple')">
+        <div class="card-imagen">
+          <img src="../img/renal-simple-rx.jpg" alt="Renal Simple AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Renal Simple AP</h2>
+        </div>
+      </div>
+
+      <!-- Bloque 9: Vesical Simple AP -->
+      <div class="card-modalidad" onclick="mostrarDetalle('detalle-vesical-simple')">
+        <div class="card-imagen">
+          <img src="../img/vesical-simple-rx.jpg" alt="Vesical Simple AP">
+        </div>
+        <div class="card-contenido">
+          <h2>Vesical Simple AP</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISTA 2: Fichas Detalladas Individuales -->
+
+    <!-- 2.1 Ficha Tórax PA -->
+    <div id="detalle-torax-pa" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/torax-pa-posicion.jpg" alt="Posicionamiento Paciente Tórax PA">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/torax-pa-rx.jpg" alt="Radiografía Tórax PA">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tórax Posteroanterior (PA)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cadenas, collares, ropa con broches/cierres/estampados metálicos, sostén, etc.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (usar bata de examen abierta hacia atrás).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal) ó 35 x 35 cm.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>180 cm (1.80 metros para evitar magnificación cardíaca).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal sobre Plano Sagital Medio (PSM). Transversal a nivel del vértice inferior de la escápula (aprox. T7 / Línea Media Clavicular).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Bipedestación, pies levemente separados. Dorso de manos en caderas, codos y hombros rotados hacia adelante para desproyectar escápulas. PSM alineado con el estativo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>110 - 125 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>2 - 4 mAs (Técnica de alto kV)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea en 2da inspiración profunda máxima.<br>- Colimación estricta a 4 bordes.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.2 Ficha Tórax Lateral -->
+    <div id="detalle-torax-lat" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/torax-lat-posicion.jpg" alt="Posicionamiento Paciente Tórax Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/torax-lat-rx.jpg" alt="Radiografía Tórax Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tórax Lateral (Izquierdo / Derecho)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Elementos metálicos en tórax, collares, sostén, etc.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal) ó 35 x 35 cm.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>180 cm (1.80 metros).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal sobre Plano Medio Coronal. Transversal a nivel del vértice inferior de la escápula (T7).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Bipedestación. Lado izquierdo apoyado contra estativo. Brazos elevados sobre la cabeza con codos hacia adelante. Sin rotación.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>115 - 125 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>7 - 12 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea inspiratoria profunda durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.3 Ficha Tórax AP Decúbito Lateral -->
+    <div id="detalle-torax-dl" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/torax-dl-posicion.jpg" alt="Posicionamiento Tórax AP Decúbito Lateral">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/torax-dl-rx.jpg" alt="Radiografía Tórax AP Decúbito Lateral">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tórax AP Decúbito Lateral (Con Rayo Horizontal)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Objetos metálicos en región torácica y sostén.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Transversal respecto al paciente, longitudinal al haz).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>180 cm (1.80 metros).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural o parrilla antidifusora portátil).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal (Perpendicular al RI vertical).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>En PSM a nivel de T7 (7 a 8 cm bajo la escotadura yugular).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito lateral (lado afectado hacia abajo para derrame pleural; lado sano hacia abajo para neumotórax) sobre camilla radiotransparente, manteniendo la posición 5 minutos previos. Brazos elevados sobre la cabeza.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>110 - 125 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 6 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea en inspiración profunda.<br>- Señalizar claramente el lado anatómico apoyado.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.4 Ficha Tórax AP Hiperlordótica -->
+    <div id="detalle-torax-lordotica" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/torax-lordotica-posicion.jpg" alt="Posicionamiento Tórax Hiperlordótica">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/torax-lordotica-rx.jpg" alt="Radiografía Tórax Hiperlordótica">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Tórax AP Hiperlordótica (Vértices Pulmonares)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Collares, cadenas y elementos metálicos en tórax y cuello.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal) ó 35 x 35 cm.</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>180 cm.</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal (si el paciente adopta posición lordótica) ó 15° a 20° cefálico (si el paciente no puede arquearse).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Sobre PSM a nivel de la parte media del esternón (aprox. 9 cm bajo la escotadura yugular).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Bipedestación a 30 cm delante del estativo, inclinando el tronco hacia atrás hasta apoyar hombros, cuello y nuca contra el estativo. Dorso de manos en caderas con hombros hacia adelante.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>110 - 125 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>3 - 5 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea en 2da inspiración máxima para desproyectar clavículas por encima de los ápices pulmonares.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.5 Ficha Parrilla Costal -->
+    <div id="detalle-parrilla-costal" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/parrilla-costal-posicion.jpg" alt="Posicionamiento Parrilla Costal">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/parrilla-costal-rx.jpg" alt="Radiografía Parrilla Costal">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Parrilla Costal (Alta / Baja / Oblicua)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Elementos metálicos, ropa con botones o cierres en tórax y abdomen alto.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Desnudar tórax (bata de examen).</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural o mesa).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Costillas Altas (Supra-diafragmáticas) a nivel de T7. Costillas Bajas (Infra-diafragmáticas) a nivel de T10 / reborde costal inferior, centrando en el hemitórax afectado.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Bipedestación (costillas altas) o Decúbito Supino (costillas bajas). Proyección AP/PA y Oblicua Anterior/Posterior (45°) acercando la zona dolorosa al receptor. Marcar punto de dolor si corresponde.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>65 - 75 kV (Altas) / 70 - 80 kV (Bajas)</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>12 - 20 mAs (Altas) / 20 - 30 mAs (Bajas)</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Costillas Altas en apnea de inspiración profunda.<br>- Costillas Bajas en apnea de espiración completa (eleva el diafragma).<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.6 Ficha Abdomen AP -->
+    <div id="detalle-abdomen-ap" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/abdomen-ap-posicion.jpg" alt="Posicionamiento Abdomen AP">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/abdomen-ap-rx.jpg" alt="Radiografía Abdomen AP">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Abdomen AP (Decúbito Supino / Bipedestación)</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Cinturones, botones metálicos, cierres, piercings umbilicales/pélvicos, joyas abdominales.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla o estativo mural).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal en PSM. Transversal en punto medio entre 2 traveses de dedo sobre apéndice xifoides y sínfisis púbica (nivel de crestas ilíacas / L4-L5; en bipedestación 5 cm más arriba para incluir cúpulas diafragmáticas).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito supino o bipedestación (mínimo 5 min de pie previo al disparo). Brazos a los lados, piernas levemente separadas, sin rotación pelviana.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 80 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>25 - 40 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea Espiratoria.<br>- Colimación estricta a paredes abdominales laterales.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.7 Ficha Abdomen AP en Decúbito Lateral Izquierdo -->
+    <div id="detalle-abdomen-dl" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/abdomen-dl-posicion.jpg" alt="Posicionamiento Abdomen DL Izquierdo">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/abdomen-dl-rx.jpg" alt="Radiografía Abdomen DL Izquierdo">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Abdomen AP en Decúbito Lateral Izquierdo</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Objetos metálicos, botones, cierres en región abdominal y pélvica.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Transversal al paciente, longitudinal al haz).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Estativo mural con rayo horizontal).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° Horizontal (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Sobre PSM, aprox. 5 cm por encima de las crestas ilíacas (debe incluir el hemidiafragma derecho para pesquisa de neumoperitoneo).</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito lateral izquierdo estricto (mínimo 5 a 10 minutos en esta posición antes de irradiar). Rodillas semiflectadas para estabilidad y brazos elevados sobre la cabeza.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 80 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>25 - 40 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea Espiratoria.<br>- Permite visualizar niveles hidroaéreos y aire libre intraperitoneal sobre el hígado.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.8 Ficha Renal Simple AP -->
+    <div id="detalle-renal-simple" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/renal-simple-posicion.jpg" alt="Posicionamiento Renal Simple">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/renal-simple-rx.jpg" alt="Radiografía Renal Simple">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Renal Simple AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Objetos metálicos, botones, cierres.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>35 x 43 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular al RI).</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal en PSM. Transversal en punto medio entre 5 traveses de dedo sobre apéndice xifoides y sínfisis púbica.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito dorsal (supino), brazos al lado del cuerpo. Preparación previa requerida (ayuno/catárticos según protocolo institucional).</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 80 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>25 - 40 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea Espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.9 Ficha Vesical Simple AP -->
+    <div id="detalle-vesical-simple" class="ficha-detalle-container" style="display: none;">
+      <button class="btn-volver" onclick="volverAProyecciones()">← Volver a Proyecciones de Tórax y Abdomen</button>
+      <div class="ficha-card">
+        <div class="ficha-galeria">
+          <div class="ficha-img-box">
+            <img src="../img/vesical-simple-posicion.jpg" alt="Posicionamiento Vesical Simple">
+            <span class="img-tag">Posicionamiento Paciente</span>
+          </div>
+          <div class="ficha-img-box">
+            <img src="../img/vesical-simple-rx.jpg" alt="Radiografía Vesical Simple">
+            <span class="img-tag">Imagen Radiológica (Rx)</span>
+          </div>
+        </div>
+        <div class="ficha-info">
+          <h2>Vesical Simple AP</h2>
+          <hr class="ficha-linea">
+          <div class="info-item"><strong>Objetos a quitar:</strong><p>Botones, cierres, joyas pélvicas.</p></div>
+          <div class="info-item"><strong>Ropa a quitar:</strong><p>Bata de examen.</p></div>
+          <div class="info-item"><strong>Formato de Chasis / RI:</strong><p>18 x 24 cm ó 24 x 30 cm (Longitudinal).</p></div>
+          <div class="info-item"><strong>Distancia Foco Película (DFP):</strong><p>100 cm (1 metro).</p></div>
+          <div class="info-item"><strong>Uso de Bucky:</strong><p>Sí (Camilla).</p></div>
+          <div class="info-item"><strong>Rayo Central (RC) / Angulación:</strong><p>0° (Perpendicular) ó 5° a caudal.</p></div>
+          <div class="info-item"><strong>Centraje:</strong><p>Longitudinal en PSM, 2 traveses de dedo por sobre la sínfisis púbica.</p></div>
+          <div class="info-item"><strong>Posición del Paciente:</strong><p>Decúbito dorsal (supino), brazos al lado del cuerpo.</p></div>
+          <div class="info-item"><strong>kV:</strong><p>70 - 80 kV</p></div>
+          <div class="info-item"><strong>mAs:</strong><p>20 - 32 mAs</p></div>
+          <div class="info-item info-instruccion"><strong>Indicaciones al Paciente:</strong><p>- Apnea Espiratoria durante el disparo.<br>- Sin moverse.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <p>Duoc UC San Joaquín - Escuela de Salud</p>
+    <p>&copy; 2026 RadioGuide.com</p>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGACIÓN DENTRO DE ESTE MÓDULO -->
+  <script>
+    function mostrarDetalle(idDetalle) {
+      document.getElementById('torax-abdomen-proyecciones').style.display = 'none';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+
+      const detalleSeleccionado = document.getElementById(idDetalle);
+      if (detalleSeleccionado) {
+        detalleSeleccionado.style.display = 'block';
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function volverAProyecciones() {
+      document.getElementById('torax-abdomen-proyecciones').style.display = 'block';
+      
+      const fichas = document.querySelectorAll('.ficha-detalle-container');
+      fichas.forEach(f => f.style.display = 'none');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
